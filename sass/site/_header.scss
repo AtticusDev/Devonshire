@@ -1,0 +1,150 @@
+.site-header {
+	margin-bottom: 3em;
+}
+
+$sm-menu-width: 320px !default;
+$sm-menu-bg: #333 !default;
+
+$sm-link-color: #fff !default;
+$sm-link-padding: 12px 24px !default;
+
+$sm-transition-dur: 300ms !default;
+$sm-transition-easing: ease-in-out !default;
+
+
+@mixin list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+
+.controls{
+    margin-right:0px;
+    transition: margin-right .4s;
+}
+
+#main {
+    margin-right:0px;
+    transition: margin-right .5s;
+    padding: 0px;
+}
+#primary {
+	padding:0px;
+}
+
+.slide-menu {
+	position: fixed;
+	width: $sm-menu-width;
+	max-width: 100%;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	display: none;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: $sm-menu-bg;
+	transition: transform $sm-transition-dur $sm-transition-easing;
+	transform: translateX(100%);
+	will-change: transform;
+	z-index: 1000;
+
+	.slider {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transition: transform $sm-transition-dur $sm-transition-easing;
+		transform: translateX(0);
+		will-change: transform;
+	}
+
+	ul {
+		@include list-unstyled;
+
+		position: relative;
+		width: $sm-menu-width;
+		max-width: 100%;
+		margin: 0;
+
+		ul {
+			position: absolute;
+			top: 0;
+			left: 100%;
+			display: none;
+		}
+
+		a {
+			display: block;
+			padding: $sm-link-padding;
+			color: $sm-link-color;
+			text-decoration: none;
+		}
+	}
+
+	&.no-transition, &.no-transition * {
+		transition: none !important;
+	}
+}
+
+
+//Top nav styling
+
+#menu-top-menu .menu-item {
+	margin: 0 2rem;
+}
+
+#menu-top-menu .nav-link {
+	position: relative;
+	display: block;
+	text-align: center;
+	color: #b5b5b5;
+	transition: color 0.1s;
+}
+
+#menu-top-menu .nav-link:hover{
+	color:#cca969;
+}
+
+#menu-top-menu .active .nav-link {
+	color:#cca969;
+}
+#menu-top-menu .nav-link::before {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 4px;
+//	z-index: 20;
+	background: #cca969;
+	transform: scale3d(0,1,1);
+	transition: transform 0.4s;
+}
+
+#menu-top-menu .nav-link::after{	
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left:0;
+	margin-left:4px;
+	width: calc(100% - 8px);
+	height: 10px;
+	z-index:30;
+	border-left:4px solid #ffffff;
+	border-right:4px solid #ffffff;
+
+	transform: scale3d(0, 1, 1);
+	transition: transform 0.4s;
+}
+
+#menu-top-menu .rollactive .nav-link::before, #menu-top-menu .rollactive .nav-link::after {
+	transform: scale3d(1, 1, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.4s;
+}
+#menu-top-menu .active .nav-link::before, #menu-top-menu .active .nav-link::after {
+	transform: scale3d(1, 1, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.4s;
+}
+
+
