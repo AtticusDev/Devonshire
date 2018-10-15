@@ -7094,6 +7094,12 @@ button:focus {
   .sidenav a {
     font-size: 18px; } }
 
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  font-family: 'Playfair Display', serif; }
+
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
@@ -7188,7 +7194,8 @@ button:focus {
             transition: none !important; }
 
 #menu-top-menu .menu-item {
-  margin: 0 2rem; }
+  margin: 0 2rem;
+  font-family: 'Playfair Display', serif; }
 
 #menu-top-menu .nav-link {
   position: relative;
