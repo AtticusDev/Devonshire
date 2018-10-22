@@ -31,6 +31,36 @@ $sm-transition-easing: ease-in-out !default;
 	padding:0px;
 }
 
+.siteName{
+	width: 285px;
+	height: 15px;
+	padding-top: 0.6rem;
+}
+
+.contactNo {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.2rem;
+	padding-top: 0.6rem;
+	color:#f7f1e8;
+}
+
+.navHolder .btnGrey{
+    background-color: #546070;
+    border-radius:0px;
+    color:#ffffff;
+}
+
+.navHolder .btn{
+	padding:0.1rem 0.3rem;
+}
+
+.navHolder .form-control {
+	border-radius:0px;
+	font-size:0.8rem;
+	padding: 0.1rem 0.4rem;
+
+}
+
 .slide-menu {
 	position: fixed;
 	width: $sm-menu-width;

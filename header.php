@@ -42,19 +42,19 @@
 						<div class="row">
 							<div class="container">
 								<div class="row justify-content-between text-white">
-									<div class="contact">
+									<div class="contactNo">
 										Call us on +44 (0)20 7034 8057
 									</div>
 									<div class="siteName">
-										THE DEVONSHIRE CLINIC
+										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/devonshire-logo-new.svg">
 									</div>
 									<div class="navHolder">
-										<div style="float: left;">
+										<div style="float: left; padding-top: 8px;">
 										  <form role="search" method="get" class="form search-form" action="/index.php">
 											<div class="input-group">
-										      <input name="s" type="text" class="form-control" placeholder="Search in this site">
+										      <input name="s" type="text" class="form-control" placeholder="Search our site">
 										      <span class="input-group-btn">
-										        <button type="submit" value="Search" class="btn btn-danger" type="button"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;</button>
+										        <button type="submit" value="Search" class="btn btnGrey" type="button"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;</button>
 										    	</span>
 											</div>
 											</form>
