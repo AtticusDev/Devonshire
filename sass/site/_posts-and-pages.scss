@@ -81,6 +81,19 @@ button:focus{
   outline: #ffffff;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+.homeIntro{
+  margin-top:15rem;
+}
+
+
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -134,9 +147,3 @@ button:focus{
 }
 
 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-h1 {
-  font-family: 'Playfair Display', serif;
-}

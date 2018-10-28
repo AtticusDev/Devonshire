@@ -7,6 +7,7 @@
  * @package Devonshire
  */
 
+
 if ( ! function_exists( 'devonshire_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -16,6 +17,7 @@ if ( ! function_exists( 'devonshire_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function devonshire_setup() {
+	
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -46,6 +48,8 @@ function devonshire_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'devonshire' ),
 		'top-menu' => esc_html__( 'top menu' ),
+		'footer' => esc_html__( 'footer menu' ),
+		'general' => esc_html__( 'general menu' ),
 	) );
 
 	/*
@@ -84,6 +88,29 @@ function devonshire_content_width() {
 }
 add_action( 'after_setup_theme', 'devonshire_content_width', 0 );
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme Global Settings',
+		'menu_title'	=> 'Global Settings',
+		'menu_slug' 	=> 'theme-global-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Header Settings',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-global-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-global-settings',
+	));
+		
+}
 
 /**
  * Add CSS/JS Scritps
@@ -114,3 +141,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Bootstrap Walker.
  */
 require get_template_directory() . '/inc/bootstrap-walker.php';
+
+
+

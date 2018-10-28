@@ -38,7 +38,7 @@
 		<div id="content" class="site-content">
 			<div id="primary" class="content-area text-center">
 				<main id="main" class="site-main" role="main">
-					<div class="container-fluid" style="background-color: #cca969;">
+					<div class="container-fluid navfixed" style="background-color: #cca969;">
 						<div class="row">
 							<div class="container">
 								<div class="row justify-content-between text-white">
@@ -46,10 +46,10 @@
 										Call us on +44 (0)20 7034 8057
 									</div>
 									<div class="siteName">
-										<img src="<?php bloginfo('stylesheet_directory'); ?>/images/devonshire-logo-new.svg">
+										<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/devonshire-logo-new.svg"></a>
 									</div>
 									<div class="navHolder">
-										<div style="float: left; padding-top: 8px;">
+										<div style="float: left; padding-top: 11px;">
 										  <form role="search" method="get" class="form search-form" action="/index.php">
 											<div class="input-group">
 										      <input name="s" type="text" class="form-control" placeholder="Search our site">
@@ -72,23 +72,4 @@
 					    </div>
 					</div>
 
-
-					<div class="container" style="height: 150px;">
-						<div class="row justify-content-center" style="padding-top:2rem;  border-bottom: 4px solid #ebebeb; height: 68px;">
-								<nav class="navbar navbar-expand-lg justify-content-center topNav">
-									<?php
-							        $args = array(
-						              'theme_location' => 'top-menu',
-						              'depth'      => 2,
-						              'container'  => false,
-						              'menu_class'     => 'navbar-nav',
-						              'walker'     => new Bootstrap_Walker_Nav_Menu()
-						              );
-						            if (has_nav_menu('primary')) {
-						              wp_nav_menu($args);
-						            }
-									?>
-								</nav>
-						</div>
-					</div>
 

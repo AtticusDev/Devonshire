@@ -12,7 +12,7 @@
 .footer-logo {
 	width: 250px;
 }
-.footer-title-white{
+.footer-title-white, .footer-title-white-norule {
 	font-size: 1.2rem;
 	color: white;
 	font-family: 'Playfair Display', serif;
@@ -28,6 +28,61 @@
      width: 40px;
  }
 .footer-body{
-	font-size: 0.8rem;
+	font-size: 0.7rem;
+	line-height: 1.2rem;
+
 	color: #9d9d9c;
+	a {
+		color: #9d9d9c;
+	}
+	a:hover {
+		color: #ffffff;
+		text-decoration: none;
+	}
+}
+.socialIcons {
+	margin-top: 5rem;
+}
+
+.newsletter-form input{
+	width: 20rem;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	background-color: #384150;
+	color:#939598;
+	border:0px;
+	margin-top: 1rem;
+
+}
+.newsletter-form button{
+	width: 10rem;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	background-color: #546070;
+	color:#FFFFFF;
+	border:1px solid #ffffff;
+	margin-top: 1rem;
+	margin-left: 20px;
+	
+}
+.CQCpanel{
+	padding-right:10rem;
+}
+
+footer .menu {
+	padding:0px;
+	list-style-type: none;
+}
+
+footer li a{
+	color:#939598;
+	margin:0px;
+}
+
+footer li a:hover{
+	color:#ffffff;
+	margin:0px;
+	text-decoration:none;
 }
