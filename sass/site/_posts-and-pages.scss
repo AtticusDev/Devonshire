@@ -88,11 +88,87 @@ h1 {
   font-family: 'Playfair Display', serif;
 }
 
+/* HOME PAGE STYLES */
+
 .homeIntro{
   margin-top:15rem;
+  font-size:1rem;
+  line-height: 1.7rem;
+}
+.homeCTA{
+  font-size: 1.2rem;
+  margin-top: 5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.home-banner{
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin-top:0px;
+  height: 1460px;
+}
+
+.serviceBlock{
+  width: 90%;
+  height: 550px;
+  padding: 2rem; 
+  margin-left: 10%;
+  margin-top: 150px;
+}
+
+/* BUTTONS */
+
+.appointmentBtn {
+  white-space: normal;
+  padding: 1rem 5rem;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display Script=all', serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top:3rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.appointmentBtn{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.appointmentBtn:after {
+  content: '\2192';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: 5px;
+  transition: 0.5s;
+}
+.appointmentBtn:hover{
+  padding-right: 8rem;
+  padding-left:2rem;
+}
+
+.appointmentBtn:hover:after {
+  opacity: 1;
+  right: 20px;
+}
+
+.blue-gold{
+  background-color: #546070;
+  color: #cca969;
+  &:hover{
+    background-color: #546070;
+    color: #cca969;
+  }
 }
 
 
+
+/* REMOVE IF NOT NEEDED */
 
 .sidenav {
     height: 100%;
@@ -134,14 +210,64 @@ h1 {
     margin-left: 50px;
   cursor:pointer;
 }
-@media only screen and (max-width: 800px) {
+
+
+
+/* BOX ANIMATIONS */
+
+.animation-element {
+  position: relative;
+//  background-color: #e1e1e1;
+}
+
+.fade-up {
+  opacity: 0;
+
+ -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  
+  transition: all 0.5s ease-out;
+
+  -moz-transform: translate3d(0px, 100px, 0px);
+  -webkit-transform: translate3d(0px, 100px, 0px);
+  -o-transform: translate(0px, 100px);
+  -ms-transform: translate(0px, 100px);
+ 
+  transform: translate3d(0px, 100, 0px);
+  backface-visibility: hidden;
+}
+.fade-up.in-view {
+  opacity: 1;
+
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+
+@media only screen and (max-width: 768px) {
  .topNav{
   display:none;
+ }
+ .home-banner{
+  background-size:800px;
+  height: 320px;
+ }
+ h1{
+  font-size: 1.2rem;
+ }
+ .intro-strap{
+  margin-top: 70px;
  }
 }
 
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 540px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }

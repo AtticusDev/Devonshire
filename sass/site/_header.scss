@@ -36,13 +36,23 @@ $sm-transition-easing: ease-in-out !default;
 	height: 15px;
 	padding-top: 0.6rem;
 }
-
-.contactNo {
+.mainLogo {
+	background-image: url('images/devonshire-logo-new.svg');
+	background-repeat: no-repeat;
+	width:300px;
+	height:30px;
+}
+.contactNo, .contactNo a {
 	font-family: 'Playfair Display', serif;
 	font-size: 1.2rem;
 	padding-top: 0.6rem;
-	color:#f7f1e8;
+	color:#ffffff;
 }
+.contactNo::before {
+	content: "Call us on";
+	color:#ffffff;
+}
+
 
 .navHolder .btnGrey{
     background-color: #546070;
@@ -70,14 +80,45 @@ $sm-transition-easing: ease-in-out !default;
   top: 32px;
 }
 
+.header-nav-container{
+	height: 150px;
+	margin-top: 50px;
+}
 
+@media only screen and (max-width: 768px) {
+	.contactNo, .contactNo a {
+		font-size:0.9rem;
+		width: 150px;
+	}
+	.contactNo::before{
+		content: "";
+	}
+	.siteName{
+		width: 50px;
+	}
+
+	.mainLogo {
+		background-image: url('images/devonshire-symbol.svg');
+		background-repeat: no-repeat;
+		width:50px;
+		height:30px;	
+	}
+	.header-nav-container{
+		visibility: hidden;
+		height:0px;
+		margin:0px;
+	}
+
+}
+
+//SLIDER MENU
 
 .slide-menu {
 	position: fixed;
 	width: $sm-menu-width;
 	max-width: 100%;
 	height: 100vh;
-	top: 0;
+	top: 50px;
 	right: 0;
 	display: none;
 	overflow: hidden;
@@ -86,7 +127,7 @@ $sm-transition-easing: ease-in-out !default;
 	transition: transform $sm-transition-dur $sm-transition-easing;
 	transform: translateX(100%);
 	will-change: transform;
-	z-index: 1000;
+	z-index: 100;
 
 	.slider {
 		position: absolute;
@@ -127,14 +168,14 @@ $sm-transition-easing: ease-in-out !default;
 }
 
 
-//Top nav styling
+//TOP NAVBAR STYLING FOR HOME PAGE
 
-#menu-top-menu .menu-item {
+#menu-top-menu-home .menu-item {
 	margin: 0 2rem;
 	font-family: 'Playfair Display', serif;
 }
 
-#menu-top-menu .nav-link {
+#menu-top-menu-home .nav-link {
 	position: relative;
 	display: block;
 	text-align: center;
@@ -142,14 +183,14 @@ $sm-transition-easing: ease-in-out !default;
 	transition: color 0.1s;
 }
 
-#menu-top-menu .nav-link:hover{
+#menu-top-menu-home .nav-link:hover{
 	color:#FFFFFF;
 }
 
-#menu-top-menu .active .nav-link {
+#menu-top-menu-home .active .nav-link {
 	color:#ffffff;
 }
-#menu-top-menu .nav-link::before {
+#menu-top-menu-home .nav-link::before {
 	position: absolute;
 	content: '';
 	left: 0;
@@ -162,7 +203,7 @@ $sm-transition-easing: ease-in-out !default;
 	transition: transform 0.4s;
 }
 
-#menu-top-menu .nav-link::after{	
+#menu-top-menu-home .nav-link::after{	
 	position: absolute;
 	content: '';
 	bottom: 0;
@@ -178,15 +219,212 @@ $sm-transition-easing: ease-in-out !default;
 	transition: transform 0.4s;
 }
 
-#menu-top-menu .rollactive .nav-link::before, #menu-top-menu .rollactive .nav-link::after {
+#menu-top-menu-home .rollactive .nav-link::before, #menu-top-menu-home .rollactive .nav-link::after {
 	transform: scale3d(1, 1, 1);
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 0.4s;
 }
-#menu-top-menu .active .nav-link::before, #menu-top-menu .active .nav-link::after {
+#menu-top-menu-home .active .nav-link::before, #menu-top-menu-home .active .nav-link::after {
 	transform: scale3d(1, 1, 1);
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 0.4s;
 }
+
+
+//TOP NAVBAR STYLING FOR ALL OTHER PAGES
+
+.navbar-nav .menu-item {
+	margin: 0 2rem;
+	font-family: 'Playfair Display', serif;
+}
+
+.navbar-nav .nav-link {
+	position: relative;
+	display: block;
+	text-align: center;
+	color: #404044;
+	transition: color 0.1s;
+}
+
+.navbar-nav .nav-link:hover{
+	color:#cca969;
+}
+
+.navbar-nav .active .nav-link {
+	color:#cca969;
+}
+.navbar-nav .nav-link::before {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 4px;
+//	z-index: 20;
+	background: #cca969;
+	transform: scale3d(0,1,1);
+	transition: transform 0.4s;
+}
+
+.navbar-nav .nav-link::after{	
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left:0;
+	margin-left:4px;
+	width: calc(100% - 8px);
+	height: 4px;
+	z-index:30;
+	border-left:4px solid #8e9094;
+	border-right:4px solid #8e9094;
+
+	transform: scale3d(0, 1, 1);
+	transition: transform 0.4s;
+}
+
+.navbar-nav .rollactive .nav-link::before, .navbar-nav .rollactive .nav-link::after {
+	transform: scale3d(1, 1, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.4s;
+}
+.navbar-nav .active .nav-link::before, .navbar-nav .active .nav-link::after {
+	transform: scale3d(1, 1, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 0.4s;
+}
+
+
+
+
+/* SITE SEARCH CSS */
+
+$brand-primary: dodgerblue;
+$search-toggle-height: 28px;
+$search-toggle-fill: #ffffff;
+$search-max-width: 400px;
+$search-height: 50px;
+$search-icon-width: 28px;
+$search-icon-fill: #ffffff;
+
+.search-toggle {
+  height: $search-toggle-height;
+  width: $search-toggle-height;
+  position: relative;
+  
+	&__icon{
+    @include transition(all .3s); 
+    height: $search-toggle-height;
+    width: $search-toggle-height;
+    display:inline;
+    fill: $search-toggle-fill;
+    cursor: pointer;
+    position: absolute;
+    left:0;
+    top: 0;
+  }
+  .icon-search{
+    visibility: visible;
+    opacity: 1;
+  }
+  .icon-cancel{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.search-toggle.open {
+   .icon-cancel{
+    visibility: visible;
+    opacity: 1;
+  }
+  .icon-search{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.search-container {
+  	@include transition(all .3s);
+  	position:fixed;
+  	width:100%;
+  	top: 50px;
+  	background-color: #cccccc;
+	max-height: 0px;
+	overflow: hidden;
+	z-index: 200;
+
+}
+.search-container.open {
+	max-height: 70px;
+	height: 70px;
+}
+
+
+.site-search {
+  form {
+		position: relative;
+		padding: 16px;
+		height: $search-height;
+		max-width: $search-max-width;
+	}
+	.input-group>.form-control{
+		border-radius: 0px;
+	}
+	.btnGrey {
+	    background-color: #546070;
+	    border-radius:0px;
+	    color:#ffffff;
+	}
+	&__input {
+		@include transition(all .3s);
+		background: #eee;
+    	font-size: 14px;
+		border: 1px solid #eee;
+		border-radius:0px;
+		width: 100%;
+		height: 100%;
+		box-shadow: 0 0 2px rgba($brand-primary, 0);
+		padding: 8px $search-icon-width 8px 10px;
+		/* @include placeholder(#a8a8a8);
+		@include placeholderFocus(#dadada);
+		*/
+		&:focus {
+			outline: none;
+			@include transition(all .3s);
+			box-shadow: 0 0 1px rgba($brand-primary, .3);
+			border: 1px solid rgba($brand-primary, .3);
+		}
+	}
+	&__btn-wrap {
+		height: 100%;
+		width: $search-icon-width;
+		position: absolute;
+		top: 0;
+		right: 5%;
+		&:hover {
+			.site-search__icon {
+				fill: $brand-primary;
+			}
+		}
+	}
+	&__submit {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: none;
+		border: none
+	}
+	&__icon {
+		@include transition(all .3s);
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -$search-icon-width /2;
+		width: $search-icon-width;
+		height: $search-icon-width;
+		fill: $search-icon-fill;
+	}
+}
+
 
 

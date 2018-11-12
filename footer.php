@@ -16,9 +16,14 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 footer-contact">
-				info@thedevonshireclinic.co.uk&nbsp;&nbsp;+44 (0) 20 3918 9601</h1>
+				<div class="col-sm-12 col-md-4 footer-contact-email">
+					<a href="mailto:info@thedevonshireclinic.co.uk">info@thedevonshireclinic.co.uk</a>
 				</div>
+				<div class="col-md-4 footer-contact-number">
+					+44 (0) 20 3918 9601
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-sm-12 col-md-6 footer-title-white-norule">
 					Subscribe to our Newsletter
 					<div>
