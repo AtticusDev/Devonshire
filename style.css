@@ -7062,8 +7062,19 @@ button:focus {
 body {
   font-family: 'Montserrat', sans-serif; }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif; }
+
+.underline::after {
+  content: '';
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 5px;
+  background-image: url(images/dot-dash-dot.svg);
+  position: relative;
+  opacity: 1;
+  top: 14px; }
 
 /* HOME PAGE STYLES */
 .homeIntro {
@@ -7093,7 +7104,10 @@ h1 {
 /* BUTTONS */
 .appointmentBtn {
   white-space: normal;
-  padding: 1rem 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  padding-right: 7rem;
   border: 0;
   border-radius: 0;
   font-size: 1.5rem;
@@ -7102,33 +7116,40 @@ h1 {
   font-style: normal;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
   cursor: pointer; }
 
 .appointmentBtn {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  -webkit-transition: 0.5s;
-          transition: 0.5s; }
+  -webkit-transition: 0.3s;
+          transition: 0.3s; }
 
 .appointmentBtn:after {
-  content: '\2192';
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(images/button-arrow-gold.svg);
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   top: 14px;
-  right: 5px;
-  -webkit-transition: 0.5s;
-          transition: 0.5s; }
+  right: 4rem;
+  -webkit-transition: 0.3s;
+          transition: 0.3s; }
+
+.btnArrow {
+  fill: #ffffff; }
 
 .appointmentBtn:hover {
-  padding-right: 8rem;
-  padding-left: 2rem; }
+  padding-right: 7.25rem;
+  padding-left: 3.75rem; }
 
 .appointmentBtn:hover:after {
   opacity: 1;
-  right: 20px; }
+  right: 3.75rem; }
 
 .blue-gold {
   background-color: #546070;
@@ -7392,12 +7413,12 @@ h1 {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: #ffffff;
   -webkit-transform: scale3d(0, 1, 1);
           transform: scale3d(0, 1, 1);
-  -webkit-transition: -webkit-transform 0.4s;
-          transition: transform 0.4s; }
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
 
 #menu-top-menu-home .nav-link::after {
   position: absolute;
@@ -7406,30 +7427,30 @@ h1 {
   left: 0;
   margin-left: 4px;
   width: calc(100% - 8px);
-  height: 4px;
+  height: 3px;
   z-index: 30;
   border-left: 4px solid #8e9094;
   border-right: 4px solid #8e9094;
   -webkit-transform: scale3d(0, 1, 1);
           transform: scale3d(0, 1, 1);
-  -webkit-transition: -webkit-transform 0.4s;
-          transition: transform 0.4s; }
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
 
 #menu-top-menu-home .rollactive .nav-link::before, #menu-top-menu-home .rollactive .nav-link::after {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s; }
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
 
 #menu-top-menu-home .active .nav-link::before, #menu-top-menu-home .active .nav-link::after {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s; }
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
 
 .navbar-nav .menu-item {
   margin: 0 2rem;
@@ -7609,7 +7630,7 @@ h1 {
 --------------------------------------------------------------*/
 .site-footer {
   padding: 4rem 0;
-  margin-top: 4rem;
+  margin-top: 0rem;
   background-color: #546070; }
 
 .footer-contact-email, .footer-contact-number, .footer-contact-email a, .footer-contact-number a {

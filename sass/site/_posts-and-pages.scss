@@ -84,9 +84,28 @@ button:focus{
 body {
   font-family: 'Montserrat', sans-serif;
 }
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
 }
+h2::before{
+  
+}
+h2::after{
+  
+}
+
+.underline::after{
+  content: '';
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 5px;
+  background-image: url(images/dot-dash-dot.svg);
+  position: relative;
+  opacity: 1;  
+  top: 14px;
+}
+
 
 /* HOME PAGE STYLES */
 
@@ -121,7 +140,10 @@ h1 {
 
 .appointmentBtn {
   white-space: normal;
-  padding: 1rem 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  padding-right: 7rem;
   border: 0;
   border-radius: 0;
   font-size: 1.5rem;
@@ -130,31 +152,38 @@ h1 {
   font-style: normal;
   margin-top:3rem;
   margin-bottom: 3rem;
-  transition: all 0.5s;
+  transition: all 0.3s;
   cursor: pointer;
 }
 .appointmentBtn{
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .appointmentBtn:after {
-  content: '\2192';
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(images/button-arrow-gold.svg);
   position: absolute;
-  opacity: 0;  
+  opacity: 1;  
   top: 14px;
-  right: 5px;
-  transition: 0.5s;
+  right: 4rem;
+  transition: 0.3s;
+}
+.btnArrow{
+  fill:#ffffff;
 }
 .appointmentBtn:hover{
-  padding-right: 8rem;
-  padding-left:2rem;
+  padding-right: 7.25rem;
+  padding-left:3.75rem;
 }
 
 .appointmentBtn:hover:after {
   opacity: 1;
-  right: 20px;
+  right: 3.75rem;
 }
 
 .blue-gold{

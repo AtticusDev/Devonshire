@@ -196,11 +196,11 @@ $sm-transition-easing: ease-in-out !default;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 4px;
+	height: 3px;
 //	z-index: 20;
 	background: #ffffff;
 	transform: scale3d(0,1,1);
-	transition: transform 0.4s;
+	transition: transform 0.3s;
 }
 
 #menu-top-menu-home .nav-link::after{	
@@ -210,24 +210,24 @@ $sm-transition-easing: ease-in-out !default;
 	left:0;
 	margin-left:4px;
 	width: calc(100% - 8px);
-	height: 4px;
+	height: 3px;
 	z-index:30;
 	border-left:4px solid #8e9094;
 	border-right:4px solid #8e9094;
 
 	transform: scale3d(0, 1, 1);
-	transition: transform 0.4s;
+	transition: transform 0.3s;
 }
 
 #menu-top-menu-home .rollactive .nav-link::before, #menu-top-menu-home .rollactive .nav-link::after {
 	transform: scale3d(1, 1, 1);
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 0.4s;
+	transition-duration: 0.3s;
 }
 #menu-top-menu-home .active .nav-link::before, #menu-top-menu-home .active .nav-link::after {
 	transform: scale3d(1, 1, 1);
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 0.4s;
+	transition-duration: 0.3s;
 }
 
 

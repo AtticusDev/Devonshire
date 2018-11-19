@@ -67,6 +67,20 @@
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid" style="background: linear-gradient(to right, #cca969 50%, #666666 50%);">
+		<div class="row">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-6 text-center text-white" style="background-color: #cca969; height:200px;">
+						<h2 class="underline">About Us</h2>
+					</div>
+					<div class="col-md-6 text-center text-white" style="background-color: #666666; height: 200px;">
+						<h2 class="underline">Our Consultants</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 

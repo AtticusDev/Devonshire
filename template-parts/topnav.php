@@ -3,7 +3,7 @@ if ( is_page_template( 'templates/home.php' ) ) {
 	?>
 
 							<div class="container header-nav-container">
-								<div class="row justify-content-center" style="padding-top:2rem;  border-bottom: 4px solid #8e9094; height: 68px;">
+								<div class="row justify-content-center" style="padding-top:2rem;  border-bottom: 3px solid #8e9094; height: 69px;">
 										<nav class="navbar navbar-expand-lg justify-content-center topNav">
 											<?php
 									        $args = array(
