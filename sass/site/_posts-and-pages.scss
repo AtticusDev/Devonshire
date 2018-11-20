@@ -83,17 +83,29 @@ button:focus{
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  color: $gray-700;
 }
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: normal;
 }
-h2::before{
-  
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1.8rem;
+}
+h3{
+  font-size: 1.5rem;  
 }
 h2::after{
   
 }
-
+.uppercase{
+  text-transform: uppercase;
+}
 .underline::after{
   content: '';
   display: block;
@@ -105,9 +117,45 @@ h2::after{
   opacity: 1;  
   top: 14px;
 }
+.underline-gold::after{
+  content: '';
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 5px;
+  background-image: url(images/dot-dash-dot-gold.svg);
+  position: relative;
+  opacity: 1;  
+  top: 14px;
+}
+.underline-blue::after{
+  content: '';
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 5px;
+  background-image: url(images/dot-dash-dot-blue.svg);
+  position: relative;
+  opacity: 1;  
+  top: 14px;
+}
 
-
+.gold {
+  color: $gold;
+}
+.blue {
+  color: $blue;
+}
+.gray {
+  color: $gray-700;
+}
 /* HOME PAGE STYLES */
+
+.intro-strap{
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: $white;
+}
 
 .homeIntro{
   margin-top:15rem;
@@ -115,7 +163,7 @@ h2::after{
   line-height: 1.7rem;
 }
 .homeCTA{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 5rem;
   font-family: 'Playfair Display', serif;
 }
@@ -128,17 +176,78 @@ h2::after{
   height: 1460px;
 }
 
+/* TECHNOLOGY BLOCKS */
+
+.techBlockGold{
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  color: $gold;
+  background-color: #f7f2e8;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+.techBlockWhite{
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  color: $blue;
+  background-color: #ffffff;
+  width: 100%;
+  height: 80px;
+  text-align:center; 
+}
+
+/* DOCTOR BLOCKS */
+
+.docBlockGray{
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: $gray-700;
+  background-color: $gray-100;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+/* SERVICE BLOCKS */
+
 .serviceBlock{
-  width: 90%;
+  width: 100%;
   height: 550px;
   padding: 2rem; 
-  margin-left: 10%;
   margin-top: 150px;
 }
 
+
+/* NEWS BLOCKS */
+
+.newsBlock{
+  width: 100%;
+  height: 430px;
+  padding: 2rem; 
+  margin-top: 4rem;
+}
+
+.dateBlock{
+  width: 110px;
+  background-color: $gold;
+  margin: auto;
+  text-align: center;
+  padding:0.5rem 1rem;
+}
+.newsSnippet{
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: $white;
+}
+
+
 /* BUTTONS */
 
-.appointmentBtn {
+.largeBlueGoldBtn {
+  background-color: $blue;
+  color: $gold;
   white-space: normal;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -148,20 +257,14 @@ h2::after{
   border-radius: 0;
   font-size: 1.5rem;
   font-family: 'Playfair Display Script=all', serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-top:3rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
   transition: all 0.3s;
-  cursor: pointer;
-}
-.appointmentBtn{
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.3s;
 }
-.appointmentBtn:after {
+.largeBlueGoldBtn:after {
   content: '';
   display: block;
   width: 40px;
@@ -173,28 +276,238 @@ h2::after{
   right: 4rem;
   transition: 0.3s;
 }
-.btnArrow{
-  fill:#ffffff;
-}
-.appointmentBtn:hover{
+.largeBlueGoldBtn:hover{
+  background-color: $blue;
+  color: $gold;
   padding-right: 7.25rem;
   padding-left:3.75rem;
 }
 
-.appointmentBtn:hover:after {
+.largeBlueGoldBtn:hover:after {
   opacity: 1;
   right: 3.75rem;
 }
 
-.blue-gold{
-  background-color: #546070;
-  color: #cca969;
-  &:hover{
-    background-color: #546070;
-    color: #cca969;
-  }
+
+.navGoldWhiteBtn {
+  background-color: $gold;
+  color: $white;
+  white-space: normal;
+  width:20rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display Script=all', serif;
+  margin: 1rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.navGoldWhiteBtn:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(images/button-arrow.svg);
+  position: absolute;
+  opacity: 1;  
+  top: 8px;
+  right: 4rem;
+  transition: 0.3s;
+}
+.navGoldWhiteBtn:hover{
+  background-color: $gold;
+  color: $white;
+  padding-left:1.75rem;
+  padding-right: 4.25rem;
 }
 
+.navGoldWhiteBtn:hover:after {
+  opacity: 1;
+  right: 3.75rem;
+}
+
+
+.navBlueWhiteBtn {
+  background-color: $blue;
+  color: $white;
+  white-space: normal;
+  width:20rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display Script=all', serif;
+  margin: 1rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.navBlueWhiteBtn:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(images/button-arrow.svg);
+  position: absolute;
+  opacity: 1;  
+  top: 8px;
+  right: 4rem;
+  transition: 0.3s;
+}
+.navBlueWhiteBtn:hover{
+  background-color: $blue;
+  color: $white;
+  padding-left:1.75rem;
+  padding-right: 4.25rem;
+}
+
+.navBlueWhiteBtn:hover:after {
+  opacity: 1;
+  right: 3.75rem;
+}
+
+
+
+.smallBlueGoldBtn {
+  background-color: $blue;
+  color: $gold;
+  white-space: normal;
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+  border: 0;
+  border-radius: 0;
+  font-size: 0.9rem;
+  font-family: 'Playfair Display Script=all', serif;
+  margin: 1rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.smallBlueGoldBtn:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(images/button-arrow-gold.svg);
+  position: absolute;
+  opacity: 1;  
+  top: 5px;
+  right: 1.5rem;
+  transition: 0.3s;
+}
+.smallBlueGoldBtn:hover{
+  background-color: $blue;
+  color: $gold;
+  padding-right: 3.25rem;
+  padding-left:1.25rem;
+}
+
+.smallBlueGoldBtn:hover:after {
+  opacity: 1;
+  right: 1.25rem;
+}
+
+.smallGoldWhiteBtn {
+  background-color: $gold;
+  color: $white;
+  white-space: normal;
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+  border: 0;
+  border-radius: 0;
+  font-size: 0.9rem;
+  font-family: 'Playfair Display Script=all', serif;
+  margin: 1rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.smallGoldWhiteBtn:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(images/button-arrow.svg);
+  position: absolute;
+  opacity: 1;  
+  top: 5px;
+  right: 1.5rem;
+  transition: 0.3s;
+}
+.smallGoldWhiteBtn:hover{
+  background-color: $gold;
+  color: $white;
+  padding-right: 3.25rem;
+  padding-left:1.25rem;
+}
+
+.smallGoldWhiteBtn:hover:after {
+  opacity: 1;
+  right: 1.25rem;
+}
+
+.smallBlueWhiteBtn {
+  background-color: $blue;
+  color: $white;
+  white-space: normal;
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+  border: 0;
+  border-radius: 0;
+  font-size: 0.9rem;
+  font-family: 'Playfair Display Script=all', serif;
+  margin: 1rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.smallBlueWhiteBtn:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(images/button-arrow.svg);
+  position: absolute;
+  opacity: 1;  
+  top: 5px;
+  right: 1.5rem;
+  transition: 0.3s;
+}
+.smallBlueWhiteBtn:hover{
+  background-color: $blue;
+  color: $white;
+  padding-right: 3.25rem;
+  padding-left:1.25rem;
+}
+
+.smallBlueWhiteBtn:hover:after {
+  opacity: 1;
+  right: 1.25rem;
+}
 
 
 /* REMOVE IF NOT NEEDED */
@@ -240,7 +553,13 @@ h2::after{
   cursor:pointer;
 }
 
+/* CANCER TREATMENT BOX */
 
+.cancerTreatment{
+  background-color: #dbe1e4;
+  width: 100%;
+  padding: 2rem;
+}
 
 /* BOX ANIMATIONS */
 
@@ -279,20 +598,131 @@ h2::after{
 
 
 
+/* TWO COLUMN FORM STYLING */
+
+.gform_wrapper.two-column_wrapper ul.gform_fields {
+display: none;
+}
+.gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+display: block;
+float: left;
+width: 50%;
+}
+.gform_wrapper.two-column_wrapper ul.gform_column li.gsection:first-child {
+display: none;
+}
+.gform_wrapper .gform_body .gform_fields .gfield input[type=text] {
+  border: 0px;
+  background-color: #f5f5f3;
+}
+.gform_wrapper .gform_body .gform_fields .gfield textarea {
+  border: 0px;
+  height: 11.4rem;
+  background-color: #f5f5f3; 
+}
+.gform_wrapper .gform_body .gform_fields .gfield .gfield_label {
+  text-align: left;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  display: block;
+}
+.gform_wrapper .gform_footer input[type=submit] {
+  padding:1rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  display: block;
+  text-transform: uppercase;
+  white-space: normal;
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius: 0px;
+  background-color: $gold;
+
+}
+div.gform_footer.top_label {
+ text-align: center;
+ font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .gform_multi_column_wrapper ul.gform_fields.half_width {
+    width: 50%;
+  }
+  .gform_multi_column_wrapper ul.gform_fields.full_width {
+    width: 100%;
+    clear: both;
+  }
+}
+
+
+
 @media only screen and (max-width: 768px) {
- .topNav{
-  display:none;
- }
+  .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+    clear: both;
+    width: 100%;
+  }
+
+
+    h1{
+      font-size: 1.5rem;
+    }
+    h2{
+      font-size: 1.3rem;
+    }
+    h3{
+      font-size: 1rem;  
+    }
+
+  .intro-strap{
+    font-size: 1.5rem;
+    }
+
+  .serviceBlock{
+    width: 100%;
+    height: 250px;
+    padding: 1rem; 
+    margin-top: 30px;
+  }
+
+  .fade-up {
+    opacity: 1;
+
+   -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -o-transition: none !important;
+    
+    transition: none !important;
+
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+   
+    transform: none !important;
+    backface-visibility: hidden;
+  }
+  .fade-up.in-view {
+    opacity: 1;
+
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+
+    transform: none !important;
+  }
+
+
  .home-banner{
   background-size:800px;
-  height: 320px;
+  height: 1320px;
  }
  h1{
   font-size: 1.2rem;
  }
  .intro-strap{
   margin-top: 70px;
- }
+  }
 }
 
 

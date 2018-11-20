@@ -7,7 +7,7 @@ function testing_scripts() {
 
 	wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 
-	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display', false );
+	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400,700,400italic', false );
 	
 	wp_enqueue_script( 'testing-js', get_template_directory_uri() . '/js/dist/scripts.min.js', array('jquery'), ' ', true );
 
