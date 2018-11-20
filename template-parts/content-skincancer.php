@@ -59,6 +59,8 @@ Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 						<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
 						vitem id ut imet quaectustio to volorepero doluptas
 						expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
+						<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
+
 					</div>
 				</div>
 			</div>
@@ -70,6 +72,7 @@ Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 						<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
 						vitem id ut imet quaectustio to volorepero doluptas
 						expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
+						<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
 				</div>
 			</div>

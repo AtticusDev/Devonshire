@@ -15,7 +15,7 @@
 			?>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-white intro-strap">
+					<div class="col-md-12 intro-strap">
 						The beautiful science of skin care
 					</div>
 					<div class="col-md-4 homeIntro">
