@@ -83,6 +83,7 @@ button:focus{
 
 body {
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.35rem;
   font-size: 0.8rem;
   color: $gray-700;
 }
@@ -100,9 +101,30 @@ h2{
 h3{
   font-size: 1.5rem;  
 }
-h2::after{
-  
+
+.downloadPanel p:first-child {
+  border-top: 1px solid $gray-400;
 }
+.pdfDownload{
+  width:100%;
+  padding: 0.5rem;
+  margin: 0px;
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid $gray-400; 
+}
+.pdfDownload::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width:20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  top: 5px;
+  background-image: url(images/pdf-download.svg);
+}
+
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -110,17 +132,19 @@ h2::after{
   content: '';
   display: block;
   margin: auto;
+  margin-bottom: 2rem;
   width: 50px;
   height: 5px;
-  background-image: url(images/dot-dash-dot.svg);
   position: relative;
   opacity: 1;  
   top: 14px;
+  background-image: url(images/dot-dash-dot.svg);
 }
 .underline-gold::after{
   content: '';
   display: block;
   margin: auto;
+  margin-bottom: 2rem;
   width: 50px;
   height: 5px;
   background-image: url(images/dot-dash-dot-gold.svg);
@@ -132,6 +156,7 @@ h2::after{
   content: '';
   display: block;
   margin: auto;
+  margin-bottom: 2rem;
   width: 50px;
   height: 5px;
   background-image: url(images/dot-dash-dot-blue.svg);
@@ -149,6 +174,24 @@ h2::after{
 .gray {
   color: $gray-700;
 }
+.white{
+  color: $white;
+}
+.bggold {
+  background-color: $gold;
+}
+.bgblue {
+  background-color: $blue;
+}
+.bggray {
+  background-color: $gray-700;
+}
+.bgwhite{
+  background-color: $white;
+}
+
+
+
 /* HOME PAGE STYLES */
 
 .intro-strap{
@@ -225,7 +268,7 @@ h2::after{
   width: 100%;
   height: 430px;
   padding: 2rem; 
-  margin-top: 4rem;
+  margin-top: 0rem;
 }
 
 .dateBlock{
@@ -244,6 +287,74 @@ h2::after{
 
 
 /* BUTTONS */
+
+.gold, .gold:hover {
+  color: $gold;
+}
+.blue, .blue:hover {
+  color: $blue;
+}
+.gray, .gray:hover {
+  color: $gray-700;
+}
+.white, .white:hover{
+  color: $white;
+}
+.white::after{
+    background-image: url(images/button-arrow.svg);
+}
+
+.bggold {
+  background-color: $gold;
+}
+.bgblue {
+  background-color: $blue;
+}
+.bggray {
+  background-color: $gray-700;
+}
+.bgwhite{
+  background-color: $white;
+}
+
+.largeBtn {
+  white-space: normal;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display Script=all', serif;
+  margin: 3rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.largeBtn:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(images/button-arrow-gold.svg);
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: 4rem;
+  transition: 0.3s;
+}
+.largeBtn:hover{
+  padding-right: 7rem;
+  padding-left:3rem;
+}
+
+.largeBtn:hover:after {
+  opacity: 1;
+  right: 2rem;
+}
 
 .largeBlueGoldBtn {
   background-color: $blue;
@@ -284,6 +395,49 @@ h2::after{
 }
 
 .largeBlueGoldBtn:hover:after {
+  opacity: 1;
+  right: 2rem;
+}
+
+.largeGoldWhiteBtn {
+  background-color: $gold;
+  color: $white;
+  white-space: normal;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display Script=all', serif;
+  margin: 3rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.largeGoldWhiteBtn:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(images/button-arrow.svg);
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: 4rem;
+  transition: 0.3s;
+}
+.largeGoldWhiteBtn:hover{
+  background-color: $gold;
+  color: $white;
+  padding-right: 7rem;
+  padding-left:3rem;
+}
+
+.largeGoldWhiteBtn:hover:after {
   opacity: 1;
   right: 2rem;
 }
@@ -378,6 +532,49 @@ h2::after{
   right: 2rem;
 }
 
+.sideBlueGoldBtn {
+  background-color: $blue;
+  color: $gold;
+  white-space: normal;
+  width:100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display Script=all', serif;
+  margin: 1rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.sideBlueGoldBtn:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(images/button-arrow-gold.svg);
+  position: absolute;
+  opacity: 0;  
+  top: 10px;
+  right: 4rem;
+  transition: 0.3s;
+}
+.sideBlueGoldBtn:hover{
+  background-color: $blue;
+  color: $gold;
+  padding-left:0.5rem;
+  padding-right: 3.5rem;
+}
+
+.sideBlueGoldBtn:hover:after {
+  opacity: 1;
+  right: 2rem;
+}
 
 
 .smallBlueGoldBtn {
@@ -617,7 +814,8 @@ display: none;
 }
 .gform_wrapper .gform_body .gform_fields .gfield textarea {
   border: 0px;
-  height: 11.4rem;
+  margin-top: 10px;
+  height: 6.1rem;
   background-color: #f5f5f3; 
 }
 .gform_wrapper .gform_body .gform_fields .gfield .gfield_label {

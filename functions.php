@@ -113,6 +113,13 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 /**
+* Hide form labels in gravity forms
+*/
+
+add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+
+
+/**
  * Add CSS/JS Scritps
  */
 require get_template_directory() . '/inc/scripts.php';

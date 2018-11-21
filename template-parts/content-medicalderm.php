@@ -16,7 +16,7 @@
 			<div class="container mt-5">
 				<div class="row">
 					<div class="col-md-6 p-5">
-						<h1>Skin Cancer</h1>
+						<h1>Medical Dermatology</h1>
 						<p>Skin cancer can arise anywhere on the skin but it
 						is more common on the parts that are exposed
 						to sunlight; the face, hands, neck, and arms. Even
@@ -41,38 +41,42 @@
 			</div>
 	</div>
 
-	<div class="container mt-5 mb-5">
+	<div class="container-fluid mt-0 mb-4 pt-5 pb-5" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/medical-derm-bg.jpg'); background-position: center center;">
 		<div class="row justify-content-center">
-			<div class="col-md-6 text-center animation-element fade-up">
-				<h2 class="underline-gold gray">Skin Cancer Treatments</h2>
-				<p class="pt-5 gold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-faucibus velit ac lorem sollicitudin rutrum. Suspendisse bibendum.
-Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 p-3">
-				<div class="cancerTreatment">
-					<div class="p-4 text-center" style="background-color: #ffffff;">
-						<h3 class="underline-blue">MOHs Micrographic Surgery</h3>
-
-						<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
-						vitem id ut imet quaectustio to volorepero doluptas
-						expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
-						<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
-
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-6 text-center animation-element fade-up">
+						<h2 class="underline-gold gray">Medical Dermatology Treatments</h2>
+						<p class="pt-5 gold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+		faucibus velit ac lorem sollicitudin rutrum. Suspendisse bibendum.
+		Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6 p-3">
-				<div class="cancerTreatment">
-					<div class="p-4 text-center" style="background-color: #ffffff;">
-						<h3 class="underline-blue">MOHs Micrographic Surgery</h3>
+				<div class="row">
+					<div class="col-md-6 p-3">
+						<div>
+							<div class="p-4 text-center" style="background-color: #ffffff;">
+								<h3 class="underline-blue">MOHs Micrographic Surgery</h3>
 
-						<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
-						vitem id ut imet quaectustio to volorepero doluptas
-						expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
-						<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
+								<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
+								vitem id ut imet quaectustio to volorepero doluptas
+								expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
+								<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 p-3">
+						<div>
+							<div class="p-4 text-center" style="background-color: #ffffff;">
+								<h3 class="underline-blue">MOHs Micrographic Surgery</h3>
+
+								<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
+								vitem id ut imet quaectustio to volorepero doluptas
+								expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
+								<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

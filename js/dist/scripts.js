@@ -6345,8 +6345,8 @@ jQuery(document).ready(function($){
 // Add your custom jQuery here
 
   var menuRight = $('#test-menu-right').slideMenu({
-      submenuLinkAfter: ' ⇒',
-      backLinkBefore: '⇐ '
+      submenuLinkAfter: ' &#8594;',
+      backLinkBefore: '&#8592; '
   });
 
   $('.hamburger').click(function()

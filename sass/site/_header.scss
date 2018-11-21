@@ -3,9 +3,9 @@
 }
 
 $sm-menu-width: 320px !default;
-$sm-menu-bg: #333 !default;
+$sm-menu-bg: $blue !default;
 
-$sm-link-color: #fff !default;
+$sm-link-color: $gold !default;
 $sm-link-padding: 12px 24px !default;
 
 $sm-transition-dur: 300ms !default;
@@ -159,6 +159,10 @@ $sm-transition-easing: ease-in-out !default;
 			padding: $sm-link-padding;
 			color: $sm-link-color;
 			text-decoration: none;
+			border-bottom: 1px solid $gold;
+		}
+		a:hover{
+			color: $white;
 		}
 	}
 
@@ -166,6 +170,8 @@ $sm-transition-easing: ease-in-out !default;
 		transition: none !important;
 	}
 }
+
+
 
 
 //TOP NAVBAR STYLING FOR HOME PAGE
@@ -442,5 +448,11 @@ $search-icon-fill: #ffffff;
 	}
 }
 
-
+.scrollIndicator {
+	position: fixed;
+	width: 15px;
+	top: 10rem;
+	right: 2rem;
+	z-index: 500;
+}
 
