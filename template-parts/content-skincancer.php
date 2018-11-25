@@ -54,12 +54,12 @@ Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 			<div class="col-md-6 p-3">
 				<div class="cancerTreatment">
 					<div class="p-4 text-center" style="background-color: #ffffff;">
-						<h3 class="underline-blue">MOHs Micrographic Surgery</h3>
+						<h3 class="underline-blue">Skin Cancer Surgery</h3>
 
 						<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
 						vitem id ut imet quaectustio to volorepero doluptas
 						expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
-						<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
+						<a href="/skin-cancer/skin-cancer-surgery" class="btn smallBlueWhiteBtn">Read More</a>
 
 					</div>
 				</div>
@@ -79,7 +79,7 @@ Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container mb-5">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
 				<div class="cancerTreatment">

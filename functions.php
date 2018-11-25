@@ -150,4 +150,15 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/bootstrap-walker.php';
 
 
-
+/**
+ * Custom post types.
+ */
+require get_template_directory() . '/inc/post-types/CPT.php';
+//Quote custom post type
+require get_template_directory() . '/inc/post-types/register-quotes.php';
+//Treatment custom post type
+require get_template_directory() . '/inc/post-types/register-treatments.php';
+//Consultant custom post type
+require get_template_directory() . '/inc/post-types/register-consultants.php';
+//Technologies custom post type
+require get_template_directory() . '/inc/post-types/register-technology.php';

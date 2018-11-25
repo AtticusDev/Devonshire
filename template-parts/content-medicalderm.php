@@ -56,12 +56,12 @@
 					<div class="col-md-6 p-3">
 						<div>
 							<div class="p-4 text-center" style="background-color: #ffffff;">
-								<h3 class="underline-blue">MOHs Micrographic Surgery</h3>
+								<h3 class="underline-blue">Acne</h3>
 
 								<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
 								vitem id ut imet quaectustio to volorepero doluptas
 								expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
-								<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
+								<a href="/medical-dermatology/acne/" class="btn smallBlueWhiteBtn">Read More</a>
 
 							</div>
 						</div>
@@ -86,7 +86,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
-				<div class="cancerTreatment">
+				<div class="generalTreatment">
 					<h3 class="underline-gold">Enquire about Skin Cancer</h3>
 				<?php
 					echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');

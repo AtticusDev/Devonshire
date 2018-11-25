@@ -16,17 +16,21 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 intro-strap">
-						The beautiful science of skin care
+						<?php
+							the_content();
+						?>
 					</div>
 					<div class="col-md-4 homeIntro">
-						The Devonshire Clinic is a private skin clinic based in Harley Street, London. Our team of dermatologists provide specialised skin treatments including both medical and cosmetic dermatology
+						<?php
+							the_field('intro_text');
+						?>
 					</div>
 				</div>
 				<div class="row justify-content-end">
 					<div class="col-md-4 homeCTA">
-						Talk to us about
-						your condition or
-						needs 020 7034 8057
+						<?php
+							the_field('contact_info');
+						?>
 					</div>
 
 				</div>

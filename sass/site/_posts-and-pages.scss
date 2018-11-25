@@ -249,9 +249,36 @@ h3{
   background-color: $gray-100;
   width: 100%;
   height: 60px;
+  padding-top: 10px;
   text-align: center;
-}
+  transition: all 0.5s;
 
+}
+.docName{
+   display:block;
+   width: 100%;
+}
+.docTitle{
+  position: relative;
+  opacity: 0;
+  top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  text-align:center;
+  transition: all 0.3s;
+}
+.docImage{
+   transition: all 0.5s;
+}
+.docImage:hover{
+  .docBlockGray{
+    height: 100px;
+  }
+  .docTitle{
+    opacity: 1;
+  }
+}
+  
 /* SERVICE BLOCKS */
 
 .serviceBlock{
@@ -757,6 +784,16 @@ h3{
   width: 100%;
   padding: 2rem;
 }
+.generalTreatment{
+  width: 100%;
+  padding: 2rem;
+}
+
+.medDermInfoBlock{
+  float: left;
+  width: 50%;
+}
+
 
 /* BOX ANIMATIONS */
 
