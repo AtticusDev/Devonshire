@@ -1,10 +1,10 @@
 <?php
 
-$treatment = new CPT(array(
-	'post_type_name' => 'treatment',
-	'singular' => __('Treatment', 'devonshire'),
-	'plural' => __('Treatments', 'devonshire'),
-	'slug' => 'treatment'
+$condition = new CPT(array(
+	'post_type_name' => 'condition',
+	'singular' => __('Condition', 'devonshire'),
+	'plural' => __('Conditions', 'devonshire'),
+	'slug' => 'condition'
 ),
 	array(
     'supports' => array('title', 'editor', 'custom-fields', 'thumbnail', 'category'),

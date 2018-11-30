@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in medicalderminfo.php
+ * Template part for displaying page content in cancerwhatis.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -18,8 +18,13 @@
 					<div class="col-md-8 text-left">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
-					</div>
 
+						<h3 class="gold">Find out more</h3>
+										
+						<p><a href="/skin-cancer" class="btn navGoldWhiteBtn">Skin Cancer Treatments</a><br />
+						<a href="/contact/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
+
+					</div>
 					<div class="col-md-4">
 						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
 							<h3 class="underline-gold">Enquire about<br />
@@ -40,7 +45,7 @@
 	<div class="container mt-5 mb-5">
 		<div class="row justify-content-center">
 			<div class="col-md-6 text-center animation-element fade-up">
-				<h2 class="underline-gold gray">Medical Dermatology Conditions</h2>
+				<h2 class="underline-gold gray">Skin Cancer Conditions</h2>
 			</div>
 		</div>
 		<div class="row justify-content-center">
@@ -55,7 +60,7 @@
 							array(
 								'taxonomy' => 'category',
 								'field'    => 'slug',
-								'terms' => 'medical-dermatology'
+								'terms' => 'skin-cancer'
 							),
 						),
 					 );
@@ -87,15 +92,6 @@
 
 
 
-			<div class="container">
-				<div class="row">
-					<div class="col text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
-					</div>
-				</div>
-			</div>
-
-
 			<?php
 			get_template_part( 'template-parts/specialistsblock' );
 			?>
@@ -106,6 +102,11 @@
 			?>
 
 
+
+
+			<?php
+			get_template_part( 'template-parts/testimonialblock' );
+			?>
 
 			<?php
 			get_template_part( 'template-parts/newsblock' );

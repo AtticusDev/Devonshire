@@ -16,17 +16,12 @@
 			<div class="container mt-5">
 				<div class="row">
 					<div class="col-md-6 p-5">
-						<h1>Medical Dermatology</h1>
-						<p>Skin cancer can arise anywhere on the skin but it
-						is more common on the parts that are exposed
-						to sunlight; the face, hands, neck, and arms. Even
-						though it is one of the most common cancers skin
-						cancer kills a relatively small number of people
-						because, when detected early, it is usually treatable</p>
+						<h1><?php the_title();  ?></h1>
+						<p><?php the_content();  ?></p>
 						<h3 class="gold">Find out more</h3>
 										
-						<p><a href="/contact/" class="btn navGoldWhiteBtn">What is Skin Cancer</a><br />
-						<a href="/contact/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
+						<p><a href="/medical-dermatology/medical-dermatology-info/" class="btn navGoldWhiteBtn">What is Medical Dermatology</a><br />
+</p>
 
 					</div>
 					<div class="col-md-6">
@@ -52,36 +47,46 @@
 		Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6 p-3">
-						<div>
-							<div class="p-4 text-center" style="background-color: #ffffff;">
-								<h3 class="underline-blue">Acne</h3>
 
-								<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
-								vitem id ut imet quaectustio to volorepero doluptas
-								expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
-								<a href="/medical-dermatology/acne/" class="btn smallBlueWhiteBtn">Read More</a>
+		<div class="row justify-content-center">
 
-							</div>
-						</div>
+					<?php
+					$args = array(
+					 'post_type' => 'treatment',
+					 'meta_key' => 'order_number',
+					 'orderby' => 'meta_value_num',
+					 'order' => 'ASC', 
+					'tax_query' => array(
+							array(
+								'taxonomy' => 'category',
+								'field'    => 'slug',
+								'terms' => 'medical-dermatology'
+							),
+						),
+					 );
+
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+					?>
+
+			<div class="col-md-6 p-3">
+					<div class="p-4 text-center" style="background-color: #ffffff;">
+						<a href="<?php the_permalink(); ?>">
+							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
+							<p class="mb-1"><?php the_excerpt(); ?></p>
+							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
-					<div class="col-md-6 p-3">
-						<div>
-							<div class="p-4 text-center" style="background-color: #ffffff;">
-								<h3 class="underline-blue">MOHs Micrographic Surgery</h3>
-
-								<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
-								vitem id ut imet quaectustio to volorepero doluptas
-								expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
-								<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
+
+				<?php
+					endwhile;
+
+					wp_reset_query();
+
+					?>
 		</div>
 	</div>
+
 
 	<div class="container">
 		<div class="row justify-content-center">
@@ -117,7 +122,7 @@
 
 
 			<?php
-			get_template_part( 'template-parts/news' );
+			get_template_part( 'template-parts/newsblock' );
 			?>
 
 

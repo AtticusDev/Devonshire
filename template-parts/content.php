@@ -24,6 +24,11 @@
 	<?php endif; ?>
 
 	<header class="entry-header">
+		<h1>This is the content template</h1>
+				<h1>Content</h1>
+						<h1>Content</h1>
+
+
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -54,7 +59,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php devonshire_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -21,12 +21,12 @@
 				</div>
 				<div class="row">
 					<div class="col-md-4 p-5">
-						<div class="p-4 d-flex align-items-end docImage" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/doctor.jpg'); background-repeat: no-repeat; width: 100%; height: 350px;">
+						<a href="/consultants/conal-perrett/"><div class="p-4 d-flex align-items-end docImage" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/doctor.jpg'); background-repeat: no-repeat; width: 100%; height: 350px;">
 							<div class="docBlockGray">
 									<div class="docName">Dr Conal Perrett</div>
 									<div class="docTitle">Consultant Dermatologist</div>
 							</div>
-						</div>
+						</div></a>
 					</div>
 					<div class="col-md-4 p-5">
 						<div class="p-4 d-flex align-items-end docImage" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/doctor.jpg'); background-repeat: no-repeat; width: 100%; height: 350px;">

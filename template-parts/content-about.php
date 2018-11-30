@@ -68,7 +68,7 @@ please click the button below or call us on 020 7034 8057.</h3>
 
 
 			<?php
-			get_template_part( 'template-parts/news' );
+			get_template_part( 'template-parts/newsblock' );
 			?>
 
 

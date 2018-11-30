@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in cancertreatment.php
+ * Template part for displaying page content in skincancercondition.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -37,7 +37,7 @@
 						</div>
 						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
 							<h3 class="underline-gold">Enquire about<br />
-								<span class="gold"><?php the_title(); ?></span></h3>
+								<span class="gold">Specialist Acne Treatment</span></h3>
 
 							<?php
 								echo do_shortcode('[gravityform id=2 name=Enquiry title=false description=false]');

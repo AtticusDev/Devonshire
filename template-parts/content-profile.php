@@ -73,7 +73,7 @@ photodynamic therapy (PDT) service. He is also the lead for Mohs surgery on the 
 
 
 			<?php
-			get_template_part( 'template-parts/news' );
+			get_template_part( 'template-parts/newsblock' );
 			?>
 
 

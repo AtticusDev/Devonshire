@@ -166,7 +166,7 @@
 
 
 			<?php
-			get_template_part( 'template-parts/news' );
+			get_template_part( 'template-parts/newsblock' );
 			?>
 
 

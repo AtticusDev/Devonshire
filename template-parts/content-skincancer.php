@@ -16,21 +16,16 @@
 			<div class="container mt-5">
 				<div class="row">
 					<div class="col-md-6 p-5">
-						<h1>Skin Cancer</h1>
-						<p>Skin cancer can arise anywhere on the skin but it
-						is more common on the parts that are exposed
-						to sunlight; the face, hands, neck, and arms. Even
-						though it is one of the most common cancers skin
-						cancer kills a relatively small number of people
-						because, when detected early, it is usually treatable</p>
+						<h1><?php the_title(); ?></h1>
+						<p><?php the_content(); ?></p>
 						<h3 class="gold">Find out more</h3>
 										
-						<p><a href="/contact/" class="btn navGoldWhiteBtn">What is Skin Cancer</a><br />
+						<p><a href="/skin-cancer/what-is-cancer/" class="btn navGoldWhiteBtn">What is Skin Cancer</a><br />
 						<a href="/contact/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
 
 					</div>
 					<div class="col-md-6">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tech-pic.jpg" class="mt-5">
+						<img src="<?php the_post_thumbnail_url(); ?>" class="mt-5">
 					</div>
 				</div>
 				<div class="row">
@@ -50,34 +45,47 @@ faucibus velit ac lorem sollicitudin rutrum. Suspendisse bibendum.
 Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row justify-content-center">
+
+					<?php
+					$args = array(
+					 'post_type' => 'treatment',
+					 'meta_key' => 'order_number',
+					 'orderby' => 'meta_value_num',
+					 'order' => 'ASC', 
+					'tax_query' => array(
+							array(
+								'taxonomy' => 'category',
+								'field'    => 'slug',
+								'terms' => 'skin-cancer'
+							),
+						),
+					 );
+
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+					?>
+
 			<div class="col-md-6 p-3">
 				<div class="cancerTreatment">
 					<div class="p-4 text-center" style="background-color: #ffffff;">
-						<h3 class="underline-blue">Skin Cancer Surgery</h3>
-
-						<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
-						vitem id ut imet quaectustio to volorepero doluptas
-						expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
-						<a href="/skin-cancer/skin-cancer-surgery" class="btn smallBlueWhiteBtn">Read More</a>
-
+						<a href="<?php the_permalink(); ?>">
+							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
+							<p class="mb-1"><?php the_excerpt(); ?></p>
+							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 p-3">
-				<div class="cancerTreatment">
-					<div class="p-4 text-center" style="background-color: #ffffff;">
-						<h3 class="underline-blue">MOHs Micrographic Surgery</h3>
 
-						<p>Aquos iliqui dus, nus erspe cum sunt, sundipidis sundit
-						vitem id ut imet quaectustio to volorepero doluptas
-						expelibus, tentur, occulpa susciis ipsundit, sitibu</p>
-						<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
-					</div>
-				</div>
-			</div>
+				<?php
+					endwhile;
+
+					wp_reset_query();
+
+					?>
 		</div>
 	</div>
+
 
 	<div class="container mb-5">
 		<div class="row justify-content-center">
@@ -113,7 +121,7 @@ Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 
 
 			<?php
-			get_template_part( 'template-parts/news' );
+			get_template_part( 'template-parts/newsblock' );
 			?>
 
 

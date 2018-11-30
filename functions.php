@@ -120,6 +120,18 @@ add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
 
 
 /**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+
+/**
  * Add CSS/JS Scritps
  */
 require get_template_directory() . '/inc/scripts.php';
@@ -158,6 +170,8 @@ require get_template_directory() . '/inc/post-types/CPT.php';
 require get_template_directory() . '/inc/post-types/register-quotes.php';
 //Treatment custom post type
 require get_template_directory() . '/inc/post-types/register-treatments.php';
+//Condition custom post type
+require get_template_directory() . '/inc/post-types/register-conditions.php';
 //Consultant custom post type
 require get_template_directory() . '/inc/post-types/register-consultants.php';
 //Technologies custom post type

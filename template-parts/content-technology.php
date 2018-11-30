@@ -85,7 +85,7 @@ would just like to know more about the treatment then please contact us on:
 
 
 			<?php
-			get_template_part( 'template-parts/news' );
+			get_template_part( 'template-parts/newsblock' );
 			?>
 
 
