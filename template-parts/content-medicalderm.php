@@ -20,7 +20,7 @@
 						<p><?php the_content();  ?></p>
 						<h3 class="gold">Find out more</h3>
 										
-						<p><a href="/medical-dermatology/medical-dermatology-info/" class="btn navGoldWhiteBtn">What is Medical Dermatology</a><br />
+						<p><a href="/medical-dermatology/what-is-medical-dermatology" class="btn navGoldWhiteBtn">What is Medical Dermatology</a><br />
 </p>
 
 					</div>
@@ -42,13 +42,15 @@
 				<div class="row justify-content-center">
 					<div class="col-md-6 text-center animation-element fade-up">
 						<h2 class="underline-gold gray">Medical Dermatology Treatments</h2>
-						<p class="pt-5 gold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-		faucibus velit ac lorem sollicitudin rutrum. Suspendisse bibendum.
-		Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
+						<p class="pt-5 gold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus velit ac lorem sollicitudin rutrum. Suspendisse bibendum. Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 					</div>
 				</div>
-
+			</div>
+		</div>
 		<div class="row justify-content-center">
+			<div class="container">
+				<div class="row">
+
 
 					<?php
 					$args = array(
@@ -69,14 +71,14 @@
 					while ( $loop->have_posts() ) : $loop->the_post();
 					?>
 
-			<div class="col-md-6 p-3">
+				<div class="col-md-6 p-3">
 					<div class="p-4 text-center" style="background-color: #ffffff;">
 						<a href="<?php the_permalink(); ?>">
 							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
 							<p class="mb-1"><?php the_excerpt(); ?></p>
 							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
-			</div>
+				</div>
 
 				<?php
 					endwhile;
@@ -84,6 +86,8 @@
 					wp_reset_query();
 
 					?>
+				</div>
+			</div>
 		</div>
 	</div>
 

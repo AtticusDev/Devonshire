@@ -7,18 +7,25 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 p-5 animation-element fade-up">
-						<p>“I was so pleased to get the call that I could finally have my treatment. The team that took care of me were fabulous and made me feel really comfortable.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus velit ac lorem sollicitudin rutrum. ”</p>
-						<span class="uppercase gold">Patient Name</span>
-					</div>
-					<div class="col-md-4 p-5 animation-element fade-up">
-						<p>“I was so pleased to get the call that I could finally have my treatment. The team that took care of me were fabulous and made me feel really comfortable.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus velit ac lorem sollicitudin rutrum. ”</p>
-						<span class="uppercase gold">Patient Name</span>
-					</div>
-					<div class="col-md-4 p-5 animation-element fade-up">
-						<p>“I was so pleased to get the call that I could finally have my treatment. The team that took care of me were fabulous and made me feel really comfortable.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus velit ac lorem sollicitudin rutrum. ”</p>
-						<span class="uppercase gold">Patient Name</span>
-					</div>
+
+						<?php 
+						$args = array( 'post_type' => 'quote', 'posts_per_page' => '3', 'orderby' => 'rand' );
+						$loop = new WP_Query( $args );
+
+						while ( $loop->have_posts() ) : $loop->the_post();
+						 $quotename = get_field( "author" );
+						 $quotetitle = get_field( "title" );
+						?>
+
+						<div class="col-md-4 p-5 animation-element fade-up">
+							<p><?php the_content(); ?></p>
+							<span class="uppercase gold"><?php the_title(); ?></span>
+						</div>
+
+						<?php 
+						endwhile;
+						wp_reset_query();
+						?>
 				</div>
 			</div>
 		</div>

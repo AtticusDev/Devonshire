@@ -3,8 +3,8 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-8 text-center animation-element fade-up">
-						<h2 class="underline-gold gray mt-5 mb-2">Second Opinions</h2>
-						<p class="pt-4 pl-5 pr-5 pt-5 gold">When you are faced with difficult medical choices or uncertainty
+						<h2 class="underline-gold gray mt-5">Second Opinions</h2>
+						<p class="pt-3 pl-5 pr-5 pb-0 gold">When you are faced with difficult medical choices or uncertainty
 and you want clarity about your diagnosis and the treatment that
 you will receive, then getting a second opinion from a private
 doctor can help put your mind at rest.</p>					

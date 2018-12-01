@@ -20,30 +20,35 @@
 					</div>
 				</div>
 				<div class="row">
+
+					<?php
+					$args = array(
+					 'post_type' => 'consultant',
+					 'meta_key' => 'order_number',
+					 'orderby' => 'meta_value_num',
+					 'order' => 'ASC', 
+					 );
+
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+					?>
 					<div class="col-md-4 p-5">
-						<a href="/consultants/conal-perrett/"><div class="p-4 d-flex align-items-end docImage" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/doctor.jpg'); background-repeat: no-repeat; width: 100%; height: 350px;">
+					<a href="<?php the_permalink(); ?>">
+						<div class="p-4 d-flex align-items-end docImage" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-repeat: no-repeat; background-size: 150%; background-position: center center; width: 100%; height: 350px;">
 							<div class="docBlockGray">
-									<div class="docName">Dr Conal Perrett</div>
-									<div class="docTitle">Consultant Dermatologist</div>
+									<div class="docName"><?php the_title(); ?></div>
+									<div class="docTitle"><?php the_field('title'); ?></div>
 							</div>
 						</div></a>
 					</div>
-					<div class="col-md-4 p-5">
-						<div class="p-4 d-flex align-items-end docImage" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/doctor.jpg'); background-repeat: no-repeat; width: 100%; height: 350px;">
-							<div class="docBlockGray">
-									<div class="docName">Dr Jane McGregor</div>
-									<div class="docTitle">Consultant Dermatologist</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 p-5">
-						<div class="p-4 d-flex align-items-end docImage" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/doctor.jpg'); background-repeat: no-repeat; width: 100%; height: 350px;">
-							<div class="docBlockGray">
-									<div class="docName">Dr Duncan Atherton</div>
-									<div class="docTitle">Consultant Dermatologist</div>
-							</div>
-						</div>
-					</div>
+
+
+
+					<?php
+					endwhile;
+					wp_reset_query();
+					?>
+
 				</div>
 			</div>
 	</div>

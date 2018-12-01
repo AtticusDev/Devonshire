@@ -106,6 +106,10 @@
 			?>
 
 
+			<?php
+			get_template_part( 'template-parts/testimonialblock' );
+			?>
+
 
 			<?php
 			get_template_part( 'template-parts/newsblock' );
