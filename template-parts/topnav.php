@@ -3,8 +3,8 @@ if ( is_page_template( 'templates/home.php' ) ) {
 	?>
 
 							<div class="container header-nav-container">
-								<div class="row justify-content-center topNavBar" style="padding-top:2rem;  border-bottom: 3px solid #8e9094; height: 69px;">
-										<nav class="navbar navbar-expand-lg justify-content-center topNav">
+								<div class="row justify-content-center">
+										<nav class="navbar navbar-expand-lg justify-content-center topNav topNavBar">
 											<?php
 									        $args = array(
 								              'theme_location' => 'top-menu',
@@ -27,9 +27,9 @@ if ( is_page_template( 'templates/home.php' ) ) {
 <?php
 } else {
 	?>
-							<div class="container" style="height: 50px; margin-top: 50px;">
-								<div class="row justify-content-center topNavBar" style="padding-top:2rem;  border-bottom: 3px solid #cccccc; height: 69px;">
-										<nav class="navbar navbar-expand-lg justify-content-center topNav">
+							<div class="container header-nav-container">
+								<div class="row justify-content-center">
+										<nav class="navbar navbar-expand-lg justify-content-center topNav topNavBar">
 											<?php
 									        $args = array(
 								              'theme_location' => 'top-menu',

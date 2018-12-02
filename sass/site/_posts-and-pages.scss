@@ -201,9 +201,9 @@ h3{
 }
 
 .homeIntro{
-  margin-top:15rem;
-  font-size:1rem;
-  line-height: 1.7rem;
+  margin-top:4rem;
+  font-size:0.9rem;
+  line-height: 1.5rem;
 }
 .homeCTA{
   font-size: 1.5rem;
@@ -212,11 +212,14 @@ h3{
 }
 
 .home-banner{
+  position: relative;
+  top: 0px;
+  left: 0px;
   background-position: center top;
   background-repeat: no-repeat;
   padding: 0px;
   margin-top:0px;
-  height: 1460px;
+  height: 600px;
 }
 
 /* TECHNOLOGY BLOCKS */
@@ -281,11 +284,21 @@ h3{
   
 /* SERVICE BLOCKS */
 
+.serviceContainer {
+  position:relative;
+  width:100%;
+  height: auto;
+  margin-top:0rem;
+  -ms-transform: translate(0px, -100px); /* IE 9 */
+  -webkit-transform: translate(0px, -100px); /* Safari */
+  transform: translate(0px, -100px);
+
+}
 .serviceBlock{
   width: 100%;
   height: 550px;
-  padding: 2rem; 
-  margin-top: 150px;
+  padding: 1rem; 
+  margin-top: 10px;
 }
 
 
@@ -915,25 +928,25 @@ div.gform_footer.top_label {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
     clear: both;
     width: 100%;
   }
-
-
     h1{
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     h2{
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
     h3{
       font-size: 1rem;  
     }
 
   .intro-strap{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-top: 70px;
+
     }
 
   .serviceBlock{
@@ -972,16 +985,47 @@ div.gform_footer.top_label {
   }
 
 
- .home-banner{
-  background-size:800px;
-  height: 1320px;
- }
- h1{
-  font-size: 1.2rem;
- }
- .intro-strap{
-  margin-top: 70px;
+
+  .intro-strap{
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: $white;
   }
+
+  .homeIntro{
+    margin-top:16rem;
+    font-size:0.9rem;
+    line-height: 1.5rem;
+  }
+  .homeCTA{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .home-banner{
+    background-size:900px;
+    height: 700px;
+  }
+
+  .serviceContainer {
+    position:relative;
+    width:100%;
+    height: auto;
+    margin-top:0rem;
+    -ms-transform: translate(0px, 0px); /* IE 9 */
+    -webkit-transform: translate(0px, 0px); /* Safari */
+    transform: translate(0px, 0px);
+
+  }
+  .serviceBlock{
+    width: 100%;
+    height: 550px;
+    padding: 1rem; 
+    margin-top: 10px;
+  }
+
+
 }
 
 

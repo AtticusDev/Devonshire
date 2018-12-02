@@ -14,19 +14,17 @@
 			get_template_part( 'template-parts/topnav' );
 			?>
 			<div class="container">
-				<div class="row">
+				<div class="row justify-content-between">
 					<div class="col-md-12 intro-strap">
 						<?php
 							the_content();
 						?>
 					</div>
-					<div class="col-md-4 homeIntro">
+					<div class="col-sm-12 col-md-12 col-lg-4 homeIntro">
 						<?php
 							the_field('intro_text');
 						?>
 					</div>
-				</div>
-				<div class="row justify-content-end">
 					<div class="col-md-4 homeCTA">
 						<?php
 							the_field('contact_info');
@@ -35,63 +33,46 @@
 
 				</div>
 			</div>
-			<div class="container" style="height: 600px;">
-				<div class="row">
-					<div class="col-sm-12 col-md-6 col-lg-4">
-						<div class="animation-element fade-up">
-							<div class="serviceBlock d-flex align-items-end" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/legs.jpg');">
-								<div class="container">
-									<div class="newsSnippet">
-										<h4 class="gold underline-gold">Skin Cancer</h4>
-										<p class="mb-1">Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Vivamus faucibus velit ac
-										lorem sollicitudin rutrum. Suspendisse</p>
-										<a href="/contact/" class="btn smallGoldWhiteBtn">Read More</a>
-									</div>
+	</div>
+
+	<div class="container serviceContainer">
+		<div class="row">
+				<?php if( have_rows('services') ): 
+					 while( have_rows('services') ): the_row(); 
+					// vars
+					$title = get_sub_field('title');
+					$description = get_sub_field('description');
+					$link = get_sub_field('link');
+					$image = get_sub_field('image');
+				?>
+				<div class="col-sm-12 col-md-12 col-lg-4">
+					<div class="animation-element fade-up">
+						<div class="serviceBlock d-flex align-items-end" style="background-image: url('<?php echo $image['url']; ?>');">
+							<div class="container">
+								<div class="newsSnippet">
+									<h4 class="gold underline-gold"><?php echo $title; ?></h4>
+									<p class="mb-1"><?php echo $description; ?></p>
+									<a href="<?php echo $link; ?>" class="btn smallGoldWhiteBtn">Read More</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-12 col-md-6 col-lg-4">
-						<div class="animation-element fade-up">
-							<div class="serviceBlock d-flex align-items-end" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/legs.jpg');">
-								<div class="container">
-									<div class="newsSnippet">
-										<h4 class="blue underline-blue">Skin Cancer</h4>
-										<p class="mb-1">Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Vivamus faucibus velit ac
-										lorem sollicitudin rutrum. Suspendisse</p>
-										<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-4">
-						<div class="animation-element fade-up">
-							<div class="serviceBlock d-flex align-items-end" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/legs.jpg');">
-								<div class="container">
-									<div class="newsSnippet">
-										<h4 class="gold underline-gold">Skin Cancer</h4>
-										<p class="mb-1">Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Vivamus faucibus velit ac
-										lorem sollicitudin rutrum. Suspendisse</p>
-										<a href="/contact/" class="btn smallBlueWhiteBtn">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				</div>
+
+				<?php endwhile;
+				endif; ?>
+
+		</div>
+	</div>
+
+
+		<div class="container mb-4" style="margin-top: -50px;">
+			<div class="row">
+				<div class="col text-center animation-element fade-up">
+					<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
 				</div>
 			</div>
 		</div>
-			<div class="container">
-				<div class="row">
-					<div class="col text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
-					</div>
-				</div>
-			</div>
 
 
 

@@ -81,7 +81,7 @@ $sm-transition-easing: ease-in-out !default;
 }
 
 .header-nav-container{
-	height: 150px;
+	height: 100px;
 	margin-top: 50px;
 }
 
@@ -239,6 +239,8 @@ $sm-transition-easing: ease-in-out !default;
 
 //TOP NAVBAR STYLING FOR ALL OTHER PAGES
 
+
+
 .navbar-nav .menu-item {
 	margin: 0 2rem;
 	font-family: 'Playfair Display', serif;
@@ -307,14 +309,23 @@ $sm-transition-easing: ease-in-out !default;
   }
 }
 
-
+.topNavBar {
+	padding-top:1rem;
+	margin-top: 1rem;
+	border-bottom: 3px solid #8e9094;
+	height: 2.7rem;
+	width: 100%;
+}
 @media (max-width: 992px){
- .topNav{
-  display:none;
- }
- .topNavBar{
-  display:none;
- }
+	.header-nav-container{
+		display:none;
+	}
+ 	.topNav{
+  		display:none;
+ 	}
+ 	.topNavBar{
+  		display:none;
+ 	}
 }
 
 

@@ -7170,9 +7170,9 @@ h3 {
   color: #fff; }
 
 .homeIntro {
-  margin-top: 15rem;
-  font-size: 1rem;
-  line-height: 1.7rem; }
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem; }
 
 .homeCTA {
   font-size: 1.5rem;
@@ -7180,11 +7180,14 @@ h3 {
   font-family: 'Playfair Display', serif; }
 
 .home-banner {
+  position: relative;
+  top: 0px;
+  left: 0px;
   background-position: center top;
   background-repeat: no-repeat;
   padding: 0px;
   margin-top: 0px;
-  height: 1460px; }
+  height: 600px; }
 
 /* TECHNOLOGY BLOCKS */
 .techBlockGold {
@@ -7243,11 +7246,21 @@ h3 {
   opacity: 1; }
 
 /* SERVICE BLOCKS */
+.serviceContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 0rem;
+  /* IE 9 */
+  -webkit-transform: translate(0px, -100px);
+  /* Safari */
+  transform: translate(0px, -100px); }
+
 .serviceBlock {
   width: 100%;
   height: 550px;
-  padding: 2rem;
-  margin-top: 150px; }
+  padding: 1rem;
+  margin-top: 10px; }
 
 /* NEWS BLOCKS */
 .newsBlock {
@@ -7837,18 +7850,19 @@ div.gform_footer.top_label {
     width: 100%;
     clear: both; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
     clear: both;
     width: 100%; }
   h1 {
-    font-size: 1.5rem; }
-  h2 {
     font-size: 1.3rem; }
+  h2 {
+    font-size: 1.1rem; }
   h3 {
     font-size: 1rem; }
   .intro-strap {
-    font-size: 1.5rem; }
+    font-size: 1.3rem;
+    margin-top: 70px; }
   .serviceBlock {
     width: 100%;
     height: 250px;
@@ -7866,13 +7880,35 @@ div.gform_footer.top_label {
     opacity: 1;
     -webkit-transform: none !important;
     transform: none !important; }
-  .home-banner {
-    background-size: 800px;
-    height: 1320px; }
-  h1 {
-    font-size: 1.2rem; }
   .intro-strap {
-    margin-top: 70px; } }
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #fff; }
+  .homeIntro {
+    margin-top: 16rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem; }
+  .homeCTA {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    font-family: 'Playfair Display', serif; }
+  .home-banner {
+    background-size: 900px;
+    height: 700px; }
+  .serviceContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 0rem;
+    /* IE 9 */
+    -webkit-transform: translate(0px, 0px);
+    /* Safari */
+    transform: translate(0px, 0px); }
+  .serviceBlock {
+    width: 100%;
+    height: 550px;
+    padding: 1rem;
+    margin-top: 10px; } }
 
 @media screen and (max-height: 540px) {
   .sidenav {
@@ -7968,7 +8004,7 @@ div.gform_footer.top_label {
   top: 32px; }
 
 .header-nav-container {
-  height: 150px;
+  height: 100px;
   margin-top: 50px; }
 
 @media only screen and (max-width: 768px) {
@@ -8172,7 +8208,16 @@ div.gform_footer.top_label {
     padding-right: 0rem;
     padding-left: 0rem; } }
 
+.topNavBar {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-bottom: 3px solid #8e9094;
+  height: 2.7rem;
+  width: 100%; }
+
 @media (max-width: 992px) {
+  .header-nav-container {
+    display: none; }
   .topNav {
     display: none; }
   .topNavBar {
