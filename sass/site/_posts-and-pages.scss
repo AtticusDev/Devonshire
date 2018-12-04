@@ -219,7 +219,7 @@ h3{
   background-repeat: no-repeat;
   padding: 0px;
   margin-top:0px;
-  height: 600px;
+  height: 800px;
 }
 
 /* TECHNOLOGY BLOCKS */
@@ -820,6 +820,7 @@ h3{
   background-color: #dbe1e4;
   width: 100%;
   padding: 2rem;
+  min-height: 318px;
 }
 .generalTreatment{
   width: 100%;
@@ -993,13 +994,14 @@ div.gform_footer.top_label {
   }
 
   .homeIntro{
-    margin-top:16rem;
+    margin-top:18rem;
     font-size:0.9rem;
     line-height: 1.5rem;
   }
   .homeCTA{
     font-size: 1.1rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     font-family: 'Playfair Display', serif;
   }
 
@@ -1012,7 +1014,7 @@ div.gform_footer.top_label {
     position:relative;
     width:100%;
     height: auto;
-    margin-top:0rem;
+    margin-top:1rem;
     -ms-transform: translate(0px, 0px); /* IE 9 */
     -webkit-transform: translate(0px, 0px); /* Safari */
     transform: translate(0px, 0px);

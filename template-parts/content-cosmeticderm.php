@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in home.php
+ * Template part for displaying page content in cosmeticderm.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -16,16 +16,16 @@
 			<div class="container mt-5">
 				<div class="row">
 					<div class="col-md-6 p-5">
-						<h1><?php the_title(); ?></h1>
-						<p><?php the_content(); ?></p>
+						<h1><?php the_title();  ?></h1>
+						<p><?php the_content();  ?></p>
 						<h3 class="gold">Find out more</h3>
 										
-						<p><a href="/skin-cancer/what-is-cancer/" class="btn navGoldWhiteBtn">What is Skin Cancer</a><br />
-						<a href="/skin-cancer/diagnosing-skin-cancer/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
+						<p><a href="/cosmetic-dermatology/what-is-cosmetic-dermatology" class="btn navGoldWhiteBtn">What is Cosmetic Dermatology</a><br />
+</p>
 
 					</div>
 					<div class="col-md-6">
-						<img src="<?php the_post_thumbnail_url(); ?>" class="mt-5">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tech-pic.jpg" class="mt-5">
 					</div>
 				</div>
 				<div class="row">
@@ -36,13 +36,21 @@
 			</div>
 	</div>
 
-	<div class="container mt-5 mb-5">
+	<div class="container-fluid mt-0 mb-4 pt-5 pb-5" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/cosmetic-derm-bg.jpg'); background-position: center center;">
 		<div class="row justify-content-center">
-			<div class="col-md-6 text-center animation-element fade-up">
-				<h2 class="underline-gold gray">Skin Cancer Treatments</h2>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-6 text-center animation-element fade-up">
+						<h2 class="underline-gold gray">Cosmetic Dermatology Treatments</h2>
+
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center">
+			<div class="container">
+				<div class="row">
+
 
 					<?php
 					$args = array(
@@ -54,7 +62,7 @@
 							array(
 								'taxonomy' => 'category',
 								'field'    => 'slug',
-								'terms' => 'skin-cancer'
+								'terms' => 'cosmetic-dermatology'
 							),
 						),
 					 );
@@ -63,16 +71,14 @@
 					while ( $loop->have_posts() ) : $loop->the_post();
 					?>
 
-			<div class="col-md-6 p-3">
-				<div class="cancerTreatment">
-					<div class="p-4 text-center" style="background-color: #ffffff; min-height: 250px;">
+				<div class="col-md-6 p-3">
+					<div class="p-4 text-center" style="background-color: #ffffff;">
 						<a href="<?php the_permalink(); ?>">
 							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
 							<p class="mb-1"><?php the_excerpt(); ?></p>
 							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
 				</div>
-			</div>
 
 				<?php
 					endwhile;
@@ -80,14 +86,16 @@
 					wp_reset_query();
 
 					?>
+				</div>
+			</div>
 		</div>
 	</div>
 
 
-	<div class="container mb-5">
+	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
-				<div class="cancerTreatment">
+				<div class="generalTreatment">
 					<h3 class="underline-gold">Enquire about Skin Cancer</h3>
 				<?php
 					echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');

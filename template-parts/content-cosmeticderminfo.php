@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in news-single.php
+ * Template part for displaying page content in cosmeticderminfo.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -16,7 +16,6 @@
 			<div class="container mt-5">
 				<div class="row">
 					<div class="col-md-8 text-left">
-						<img src="<?php the_post_thumbnail_url(); ?>">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
 					</div>
@@ -37,6 +36,36 @@
 				</div>
 			</div>
 	</div>
+
+
+			<div class="container">
+				<div class="row">
+					<div class="col text-center animation-element fade-up">
+						<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
+					</div>
+				</div>
+			</div>
+
+
+			<?php
+			get_template_part( 'template-parts/specialistsblock' );
+			?>
+
+
+			<?php
+			get_template_part( 'template-parts/secondopinion' );
+			?>
+
+
+			<?php
+			get_template_part( 'template-parts/testimonialblock' );
+			?>
+
+
+			<?php
+			get_template_part( 'template-parts/newsblock' );
+			?>
+
 
 
 			<?php

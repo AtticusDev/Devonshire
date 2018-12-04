@@ -15,11 +15,23 @@
 			?>
 			<div class="container mt-5">
 				<div class="row justify-content-center">
-				<?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
+				<?php 
+					$args = array(
+					 'post_type' => 'post',
+					 'posts_per_page' => -1,
+					 'orderby' => 'date',
+					 'order' => 'DESC',
+					 ); 
+				?>
+				<?php $the_query = new WP_Query( $args ); 
+				$postCount = 0;
+				?>
 
-				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); 
+					$postCount++;
+					?>
 					<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); ?>
-					<?php if ( in_category( 'featured' ) ) : ?>
+					<?php if ( $postCount == 1 ) : ?>
 					<div class="col-sm-12 col-md-12">
 						<div class="animation-element fade-up">
 							<div class="newsBlock justify-content-center d-flex align-items-end" style="background-image: url('<?php echo $featured_img_url ?>'); background-position: center center; background-repeat: no-repeat;">

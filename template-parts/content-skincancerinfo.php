@@ -22,7 +22,7 @@
 						<h3 class="gold">Find out more</h3>
 										
 						<p><a href="/skin-cancer" class="btn navGoldWhiteBtn">Skin Cancer Treatments</a><br />
-						<a href="/contact/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
+						<a href="/skin-cancer/diagnosing-skin-cancer/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
 
 					</div>
 					<div class="col-md-4">
