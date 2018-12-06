@@ -41,7 +41,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
+						<a href="/contact/" class="btn largeBtn gold bgblue">Book an appointment</a>
 					</div>
 				</div>
 			</div>

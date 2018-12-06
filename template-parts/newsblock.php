@@ -20,7 +20,10 @@
 									</div>
 									<div class="newsSnippet">
 										<h3 class="gold"><a href="<?php the_permalink() ?>" class="gold"><?php the_title(); ?></a></h3>
-										<p class="mb-1"><?php the_excerpt(); ?></p>
+							<?php
+							$string = get_the_content();
+							?>
+							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 120, '[...]'); ?></p>
 										<a href="<?php the_permalink() ?>" class="btn smallBlueWhiteBtn">Read More</a>
 									</div>
 								</div>

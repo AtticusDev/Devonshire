@@ -31,7 +31,7 @@ hospitals. He and his handpicked team of experts strive to provide first class p
 						<h3 class="gold">If you want to make an appointment with The Devonshire Clinic to
 see Dr Conal Perrett or one of our other Consultant Dermatologists,
 please click the button below or call us on 020 7034 8057.</h3>
-						<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
+						<a href="/contact/" class="btn largeBtn gold bgblue">Book an appointment</a>
 					</div>
 				</div>
 			</div>

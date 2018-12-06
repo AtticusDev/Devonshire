@@ -93,13 +93,18 @@ h1, h2, h3, h4 {
   font-style: normal;
 }
 h1{
-  font-size: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+  color: $gray-600;
 }
 h2{
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+  color: $gray-600;
 }
 h3{
   font-size: 1.5rem;  
+  letter-spacing: 0.05rem;
 }
 
 .downloadPanel p:first-child {
@@ -163,31 +168,6 @@ h3{
   position: relative;
   opacity: 1;  
   top: 14px;
-}
-
-.gold {
-  color: $gold;
-}
-.blue {
-  color: $blue;
-}
-.gray {
-  color: $gray-700;
-}
-.white{
-  color: $white;
-}
-.bggold {
-  background-color: $gold;
-}
-.bgblue {
-  background-color: $blue;
-}
-.bggray {
-  background-color: $gray-700;
-}
-.bgwhite{
-  background-color: $white;
 }
 
 
@@ -364,8 +344,13 @@ h3{
 .white, .white:hover{
   color: $white;
 }
-.white::after{
-    background-image: url(images/button-arrow.svg);
+
+.largeBtn.gold.bgblue:after {
+   background-image: url(images/button-arrow-gold.svg);
+}
+
+.largeBtn.white.bggold:after {
+   background-image: url(images/button-arrow.svg);
 }
 
 .bggold {
@@ -381,48 +366,10 @@ h3{
   background-color: $white;
 }
 
+
+
+
 .largeBtn {
-  white-space: normal;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  border: 0;
-  border-radius: 0;
-  font-size: 1.5rem;
-  font-family: 'Playfair Display Script=all', serif;
-  margin: 0rem 0;
-  transition: all 0.3s;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.3s;
-}
-.largeBtn:after {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-image: url(images/button-arrow-gold.svg);
-  position: absolute;
-  opacity: 0;  
-  top: 14px;
-  right: 4rem;
-  transition: 0.3s;
-}
-.largeBtn:hover{
-  padding-right: 7rem;
-  padding-left:3rem;
-}
-
-.largeBtn:hover:after {
-  opacity: 1;
-  right: 2rem;
-}
-
-.largeBlueGoldBtn {
-  background-color: $blue;
-  color: $gold;
   white-space: normal;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -439,29 +386,27 @@ h3{
   position: relative;
   transition: 0.3s;
 }
-.largeBlueGoldBtn:after {
+.largeBtn:after {
   content: '';
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url(images/button-arrow-gold.svg);
   position: absolute;
   opacity: 0;  
   top: 14px;
   right: 4rem;
   transition: 0.3s;
 }
-.largeBlueGoldBtn:hover{
-  background-color: $blue;
-  color: $gold;
+.largeBtn:hover{
   padding-right: 7rem;
   padding-left:3rem;
 }
 
-.largeBlueGoldBtn:hover:after {
+.largeBtn:hover:after {
   opacity: 1;
   right: 2rem;
 }
+
 
 .largeGoldWhiteBtn {
   background-color: $gold;
@@ -511,7 +456,7 @@ h3{
   background-color: $gold;
   color: $white;
   white-space: normal;
-  width:20rem;
+  width:25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 4rem;
@@ -556,7 +501,7 @@ h3{
   background-color: $blue;
   color: $white;
   white-space: normal;
-  width:20rem;
+  width:25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 4rem;

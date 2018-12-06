@@ -74,7 +74,10 @@
 					<div class="p-4 text-center" style="background-color: #ffffff;">
 						<a href="<?php the_permalink(); ?>">
 							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
-							<p class="mb-1"><?php the_excerpt(); ?></p>
+							<?php
+							$string = get_the_content();
+							?>
+							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 120, '[...]'); ?></p>
 							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
 				</div>
@@ -94,7 +97,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
+						<a href="/contact/" class="btn largeBtn gold bgblue">Book an appointment</a>
 					</div>
 				</div>
 			</div>

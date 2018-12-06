@@ -20,7 +20,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 	<div class="scrollIndicator">
 		<img src='<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg'>
 	</div>

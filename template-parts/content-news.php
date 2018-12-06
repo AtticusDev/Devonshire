@@ -33,14 +33,17 @@
 					<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); ?>
 					<?php if ( $postCount == 1 ) : ?>
 					<div class="col-sm-12 col-md-12">
-						<div class="animation-element fade-up">
+						<div class="animation-element fade-up mb-4">
 							<div class="newsBlock justify-content-center d-flex align-items-end" style="background-image: url('<?php echo $featured_img_url ?>'); background-position: center center; background-repeat: no-repeat;">
 								<div class="container">
 									<div class="row justify-content-center">
 										<div class="featurenewsSnippet">
 											<p><?php echo get_the_date( 'd M Y' ); ?></p>
 											<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-											<p class="mb-1"><?php the_excerpt(); ?></p>
+											<?php
+											$string = get_the_content();
+											?>
+											<p class="mb-1"><?php echo mb_strimwidth($string, 0, 120, '[...]'); ?></p>
 											<a href="<?php the_permalink() ?>" class="btn smallBlueWhiteBtn">Read More</a>
 										</div>
 									</div>
@@ -51,7 +54,7 @@
 
  					<?php else : ?>
 					<div class="col-md-5">
-						<div class="animation-element fade-up">
+						<div class="animation-element fade-up mb-4">
 							<div class="newsBlock justify-content-center d-flex align-items-end" style="background-image: url('<?php echo $featured_img_url ?>'); background-position: center center; background-repeat: no-repeat;">
 								<div class="container">
 									<div class="dateBlock">
@@ -59,7 +62,10 @@
 									</div>
 									<div class="newsSnippet">
 										<h3 class="gold"><a href="<?php the_permalink() ?>" class="gold"><?php the_title(); ?></a></h3>
-										<p class="mb-1"><?php the_excerpt(); ?></p>
+										<?php
+										$string = get_the_content();
+										?>
+										<p class="mb-1"><?php echo mb_strimwidth($string, 0, 120, '[...]'); ?></p>
 										<a href="<?php the_permalink() ?>" class="btn smallBlueWhiteBtn">Read More</a>
 									</div>
 								</div>

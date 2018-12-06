@@ -7071,13 +7071,18 @@ h1, h2, h3, h4 {
   font-style: normal; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+  color: #868e96; }
 
 h2 {
-  font-size: 1.8rem; }
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+  color: #868e96; }
 
 h3 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem; }
 
 .downloadPanel p:first-child {
   border-top: 1px solid #ced4da; }
@@ -7138,30 +7143,6 @@ h3 {
   position: relative;
   opacity: 1;
   top: 14px; }
-
-.gold {
-  color: #cca968; }
-
-.blue {
-  color: #546070; }
-
-.gray {
-  color: #495057; }
-
-.white {
-  color: #fff; }
-
-.bggold {
-  background-color: #cca968; }
-
-.bgblue {
-  background-color: #546070; }
-
-.bggray {
-  background-color: #495057; }
-
-.bgwhite {
-  background-color: #fff; }
 
 /* HOME PAGE STYLES */
 .intro-strap {
@@ -7318,7 +7299,10 @@ h3 {
 .white, .white:hover {
   color: #fff; }
 
-.white::after {
+.largeBtn.gold.bgblue:after {
+  background-image: url(images/button-arrow-gold.svg); }
+
+.largeBtn.white.bggold:after {
   background-image: url(images/button-arrow.svg); }
 
 .bggold {
@@ -7343,7 +7327,7 @@ h3 {
   border-radius: 0;
   font-size: 1.5rem;
   font-family: 'Playfair Display Script=all', serif;
-  margin: 0rem 0;
+  margin: 1rem 0 2rem 0;
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
   cursor: pointer;
@@ -7357,7 +7341,6 @@ h3 {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url(images/button-arrow-gold.svg);
   position: absolute;
   opacity: 0;
   top: 14px;
@@ -7370,50 +7353,6 @@ h3 {
   padding-left: 3rem; }
 
 .largeBtn:hover:after {
-  opacity: 1;
-  right: 2rem; }
-
-.largeBlueGoldBtn {
-  background-color: #546070;
-  color: #cca968;
-  white-space: normal;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  border: 0;
-  border-radius: 0;
-  font-size: 1.5rem;
-  font-family: 'Playfair Display Script=all', serif;
-  margin: 1rem 0 2rem 0;
-  -webkit-transition: all 0.3s;
-          transition: all 0.3s;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  -webkit-transition: 0.3s;
-          transition: 0.3s; }
-
-.largeBlueGoldBtn:after {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-image: url(images/button-arrow-gold.svg);
-  position: absolute;
-  opacity: 0;
-  top: 14px;
-  right: 4rem;
-  -webkit-transition: 0.3s;
-          transition: 0.3s; }
-
-.largeBlueGoldBtn:hover {
-  background-color: #546070;
-  color: #cca968;
-  padding-right: 7rem;
-  padding-left: 3rem; }
-
-.largeBlueGoldBtn:hover:after {
   opacity: 1;
   right: 2rem; }
 
@@ -7465,7 +7404,7 @@ h3 {
   background-color: #cca968;
   color: #fff;
   white-space: normal;
-  width: 20rem;
+  width: 25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 4rem;
@@ -7510,7 +7449,7 @@ h3 {
   background-color: #546070;
   color: #fff;
   white-space: normal;
-  width: 20rem;
+  width: 25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 4rem;
@@ -7976,7 +7915,7 @@ div.gform_footer.top_label {
 
 .contactNo, .contactNo a {
   font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-top: 0.6rem;
   color: #ffffff; }
 
@@ -8213,7 +8152,7 @@ div.gform_footer.top_label {
 .topNavBar {
   padding-top: 1rem;
   margin-top: 1rem;
-  border-bottom: 3px solid #8e9094;
+  border-bottom: 3px solid #d0d0d0;
   height: 2.7rem;
   width: 100%; }
 

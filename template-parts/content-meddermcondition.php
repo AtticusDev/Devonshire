@@ -52,9 +52,21 @@
 			</div>
 	</div>
 
-			<?php
-			get_template_part( 'template-parts/testimonialblock' );
-			?>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container mt-5 mb-5 text-left">
+				<div class="row">
+					<div class="col-md-6 p-5 animation-element fade-up">
+						<p><?php the_field('description1'); ?></p>
+					</div>
+					<div class="col-md-6 p-5 animation-element fade-up">
+						<p><?php the_field('description2'); ?></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<div class="container-fluid mt-0 mb-4 pt-5 pb-5"  style="background-color: #f8f7f2;">

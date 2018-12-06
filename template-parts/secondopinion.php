@@ -9,7 +9,7 @@ and you want clarity about your diagnosis and the treatment that
 you will receive, then getting a second opinion from a private
 doctor can help put your mind at rest.</p>					
 					<div class="col text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeGoldWhiteBtn">Request a second opinion</a>
+						<a href="/second-opinion/" class="btn largeBtn white bggold">Request a second opinion</a>
 					</div>
 					</div>
 				</div>

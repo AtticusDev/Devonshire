@@ -9,13 +9,13 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="container-fluid" style="background-color: #f8f7f2;">
+	<div class="container-fluid">
 			<?php
 			get_template_part( 'template-parts/topnav' );
 			?>
 			<div class="container mt-5">
 				<div class="row">
-					<div class="col-md-6 p-5">
+					<div class="col-md-6 pl-5 pr-5">
 						<h1><?php the_title();  ?></h1>
 						<p><?php the_content();  ?></p>
 						<h3 class="gold">Find out more</h3>
@@ -25,12 +25,12 @@
 
 					</div>
 					<div class="col-md-6">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tech-pic.jpg" class="mt-5">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tech-pic.jpg">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
+						<a href="/contact/" class="btn largeBtn gold bgblue">Book an appointment</a>
 					</div>
 				</div>
 			</div>
@@ -42,7 +42,6 @@
 				<div class="row justify-content-center">
 					<div class="col-md-6 text-center animation-element fade-up">
 						<h2 class="underline-gold gray">Medical Dermatology Treatments</h2>
-						<p class="pt-5 gold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus velit ac lorem sollicitudin rutrum. Suspendisse bibendum. Donsectetur. Consectetur adipiscing elit. Vivamus faucibus velit ac</p>
 					</div>
 				</div>
 			</div>
@@ -75,7 +74,10 @@
 					<div class="p-4 text-center" style="background-color: #ffffff;">
 						<a href="<?php the_permalink(); ?>">
 							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
-							<p class="mb-1"><?php the_excerpt(); ?></p>
+							<?php
+							$string = get_the_content();
+							?>
+							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 130, '[...]'); ?></p>
 							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
 				</div>
