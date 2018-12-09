@@ -18,6 +18,12 @@
 					<div class="col-md-8 text-left">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
+						<h3 class="gold">Find out more</h3>
+										
+						<p><a href="/medical-dermatology/" class="btn navGoldWhiteBtn">Medical Dermatology Treatments</a><br />
+						<a href="#conditions" class="btn navBlueWhiteBtn">Medical Dermatology Conditions</a><br />
+
+</p>
 					</div>
 
 					<div class="col-md-4">
@@ -38,6 +44,7 @@
 	</div>
 
 	<div class="container mt-5 mb-5">
+		<a id="conditions"></a>
 		<div class="row justify-content-center">
 			<div class="col-md-6 text-center animation-element fade-up">
 				<h2 class="underline-gold gray">Medical Dermatology Conditions</h2>

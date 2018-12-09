@@ -20,12 +20,16 @@
 						<p><?php the_content(); ?></p>
 						<h3 class="gold">Find out more</h3>
 										
-						<p><a href="/skin-cancer/what-is-cancer/" class="btn navGoldWhiteBtn">What is Skin Cancer</a><br />
-						<a href="/skin-cancer/diagnosing-skin-cancer/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
+						<p><a href="/skin-cancer/what-is-skin-cancer/" class="btn navGoldWhiteBtn">What is Skin Cancer</a><br />
+						<a href="/skin-cancer/diagnosing-skin-cancer/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a><br />
+						<a href="#treatments" class="btn navGoldWhiteBtn">Skin Cancer Treatments</a></p>
+
 
 					</div>
 					<div class="col-md-6">
-						<img src="<?php the_post_thumbnail_url(); ?>">
+						<div class="imageContainer">
+							<img src="<?php the_post_thumbnail_url(); ?>" class="imageAnimate">
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -37,6 +41,7 @@
 	</div>
 
 	<div class="container mt-5 mb-5">
+		<a id="treatments"></a>
 		<div class="row justify-content-center">
 			<div class="col-md-6 text-center animation-element fade-up">
 				<h2 class="underline-gold gray">Skin Cancer Treatments</h2>

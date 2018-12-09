@@ -9,6 +9,10 @@ function testing_scripts() {
 
 	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400,700,400italic', false );
 	
+    wp_enqueue_script( 'gsap-js', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js', array(), false, true );
+
+    wp_enqueue_script( 'custom-gsap', get_template_directory_uri() . '/js/dist/custom-gsap-scripts.js﻿', array(), ' ', true );
+
 	wp_enqueue_script( 'testing-js', get_template_directory_uri() . '/js/dist/scripts.min.js', array('jquery'), ' ', true );
 
 	wp_enqueue_script( 'slide-menu', get_template_directory_uri() . '/js/dist/slide-menu.js', array('jquery'), ' ', true );

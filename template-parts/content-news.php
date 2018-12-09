@@ -80,11 +80,12 @@
 					?>			
 				</div>
 			</div>
+		</div>
 
 
-			<?php
-			get_template_part( 'template-parts/footerbuttons' );
-			?>
+		<?php
+		get_template_part( 'template-parts/footerbuttons' );
+		?>
 
 </article><!-- #post-## -->
 

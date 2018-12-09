@@ -15,7 +15,7 @@
 			?>
 			<div class="container mt-5">
 				<div class="row">
-					<div class="col-md-6 p-5">
+					<div class="col-md-6 p-5 text-left">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
 
@@ -26,7 +26,7 @@
 				</div>
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
+						<a href="/contact/" class="btn largeBtn gold bgblue">Book an appointment</a>
 					</div>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
 						<p><?php the_field('description'); ?></p>
 					</div>
 					<div class="col-md-4 mt-4 p-4 animation-element fade-up text-left"  style="background-color: #f8f7f2;">
-						<div class="p-3" style="background-color: #ffffff; width:100%;">
+						<div class="p-3 text-center" style="background-color: #ffffff; width:100%;">
 							<h3 class="underline-gold">Enquire about<br />
 								<span class="gold"><?php the_title(); ?></span></h3>
 

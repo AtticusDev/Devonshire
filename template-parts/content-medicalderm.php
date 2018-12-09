@@ -21,6 +21,8 @@
 						<h3 class="gold">Find out more</h3>
 										
 						<p><a href="/medical-dermatology/what-is-medical-dermatology" class="btn navGoldWhiteBtn">What is Medical Dermatology</a><br />
+						<a href="#treatments" class="btn navBlueWhiteBtn">Medical Dermatology Treatments</a><br />
+
 </p>
 
 					</div>
@@ -37,6 +39,7 @@
 	</div>
 
 	<div class="container-fluid mt-0 mb-4 pt-5 pb-5" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/medical-derm-bg.jpg'); background-position: center center;">
+		<a id="treatments"></a>
 		<div class="row justify-content-center">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -98,7 +101,7 @@
 		<div class="row justify-content-center">
 			<div class="col-md-8">
 				<div class="generalTreatment">
-					<h3 class="underline-gold">Enquire about Skin Cancer</h3>
+					<h3 class="underline-gold">Enquire about <?php the_title(); ?></h3>
 				<?php
 					echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
 				?>

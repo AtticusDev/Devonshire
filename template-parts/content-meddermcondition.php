@@ -21,8 +21,7 @@
 
 						<h3 class="gold">Find out more</h3>
 										
-						<p><a href="/contact/" class="btn navGoldWhiteBtn">What is Skin Cancer</a><br />
-						<a href="/contact/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
+						<p><a href="#treatments" class="btn navGoldWhiteBtn"><?php the_title(); ?> Treatments</a><br />
 
 					</div>
 					<div class="col-md-4">
@@ -35,14 +34,6 @@
 						</div>
 						<div class="text-center animation-element fade-up">
 							<a href="/contact/" class="btn sideBlueGoldBtn">Book an appointment</a></p>
-						</div>
-						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
-							<h3 class="underline-gold">Enquire about<br />
-								<span class="gold"><?php the_title(); ?></span></h3>
-
-							<?php
-								echo do_shortcode('[gravityform id=2 name=Enquiry title=false description=false]');
-							?>
 						</div>
 
 
@@ -70,6 +61,7 @@
 
 
 	<div class="container-fluid mt-0 mb-4 pt-5 pb-5"  style="background-color: #f8f7f2;">
+	<a id="treatments"></a>
 		<div class="row justify-content-center">
 			<div class="container">
 				<div class="row justify-content-center">

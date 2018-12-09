@@ -13,12 +13,12 @@
 			<?php
 			get_template_part( 'template-parts/topnav' );
 			?>
-			<div class="container mt-5">
+			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-8 p-5">
-						<h1 class="underline-gold">An introduction to the clinic</h1>
-						<p class="gold">The Devonshire Clinic, a private skin clinic in central London, was founded by Dr Conal Perrett, a Consultant Dermatologist with many years experience in London teaching
-hospitals. He and his handpicked team of experts strive to provide first class patient care. Our clinic at 16 Devonshire Street is within The Harley Street Clinic Diagnostic Centre hosted by HCA International. Waiting areas, consulting rooms and treatment suites are well appointed and comfortable and we have ready access to the latest medical technology including MRI scanning, lasers and state-of-the-art day case operating theatres.</p>
+					<?php
+					the_content();
+					?>
 					</div>
 				</div>
 				<div class="row justify-content-center">
@@ -36,6 +36,10 @@ please click the button below or call us on 020 7034 8057.</h3>
 				</div>
 			</div>
 	</div>
+
+			<?php
+			get_template_part( 'template-parts/specialistsblock' );
+			?>
 
 
 			<div class="container-fluid" style="background-color:#f8f7f2;">

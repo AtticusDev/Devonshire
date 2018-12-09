@@ -34,7 +34,6 @@
 				</div>
 			</div>
 	</div>
-
 	<div class="container serviceContainer">
 		<div class="row">
 				<?php if( have_rows('services') ): 
@@ -47,7 +46,7 @@
 				?>
 				<div class="col-sm-12 col-md-12 col-lg-4">
 					<div class="animation-element fade-up">
-						<div class="serviceBlock d-flex align-items-end" style="background-image: url('<?php echo $image['url']; ?>');">
+						<div class="serviceBlock d-flex align-items-end" style="background-image: url('<?php echo $image['url']; ?>'); background-size: cover; background-position: center center;">
 							<div class="container">
 								<div class="newsSnippet">
 									<h4 class="gold underline-gold"><?php echo $title; ?></h4>

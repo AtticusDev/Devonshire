@@ -27,16 +27,32 @@
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-md-6 mt-0 text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBlueGoldBtn">Book an appointment</a>
+					<div class="col-md-6 mt-3 text-center animation-element fade-up">
+						<a href="/contact/" class="btn largeBtn bgblue gold">Book an appointment</a>
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-md-6 mt-0 text-center animation-element fade-up">
+					<div class="col-md-6 mb-4 text-center animation-element fade-up">
 						<p class="gold"><?php the_content(); ?></p>
 					</div>
 				</div>
 			</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container mt-4 mb-4 text-left">
+				<div class="row">
+					<div class="col-md-6 p-5 animation-element fade-up">
+						<p><?php the_field('description1'); ?></p>
+					</div>
+					<div class="col-md-6 p-5 animation-element fade-up">
+						<p><?php the_field('description2'); ?></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
 
 

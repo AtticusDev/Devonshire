@@ -7144,6 +7144,22 @@ h3 {
   opacity: 1;
   top: 14px; }
 
+/* IMAGE ANIMATION */
+.imageContainer {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  width: 570px;
+  height: 436px; }
+
+.imageContainer img {
+  max-width: 200%;
+  max-height: 200%; }
+
+.imageAnimate {
+  width: 570px;
+  height: 436px; }
+
 /* HOME PAGE STYLES */
 .intro-strap {
   font-size: 2rem;
@@ -7243,10 +7259,26 @@ h3 {
   padding: 1rem;
   margin-top: 10px; }
 
+/* CONTACT BLOCKS */
+.contactBlock {
+  width: 100%;
+  height: 400px;
+  padding: 2rem;
+  margin-top: 5rem; }
+
+.contactLogo {
+  width: 300px; }
+
 /* NEWS BLOCKS */
 .newsBlock {
   width: 100%;
   height: 430px;
+  padding: 2rem;
+  margin-top: 0rem; }
+
+.newsBlockSide {
+  width: 100%;
+  height: 300px;
   padding: 2rem;
   margin-top: 0rem; }
 
@@ -7285,6 +7317,10 @@ h3 {
   margin: auto;
   text-align: center;
   padding: 0.5rem 1rem; }
+
+.post {
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
 
 /* BUTTONS */
 .gold, .gold:hover {

@@ -20,9 +20,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="scrollIndicator">
+<!--	<div class="scrollIndicator">
 		<img src='<?php bloginfo('stylesheet_directory'); ?>/images/fb.svg'>
 	</div>
+-->
     <nav class="slide-menu" id="test-menu-right">
 		<?php
 				        $args = array(

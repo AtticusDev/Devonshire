@@ -1,0 +1,4 @@
+// run you﻿r custom code
+TweenMax.to(".intro-strap", 2, {left:800});
+TweenMax.to(".imageAnimate", 2, {width:855, height:654});
+

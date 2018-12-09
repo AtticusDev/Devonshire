@@ -75,10 +75,6 @@
 					<div class="p-4 text-center" style="background-color: #ffffff;">
 						<a href="<?php the_permalink(); ?>">
 							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
-							<?php
-							$string = get_the_content();
-							?>
-							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 150, '[...]'); ?></p>
 							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
 				</div>
@@ -99,7 +95,7 @@
 		<div class="row justify-content-center">
 			<div class="col-md-8">
 				<div class="generalTreatment">
-					<h3 class="underline-gold">Enquire about Skin Cancer</h3>
+					<h3 class="underline-gold">Enquire about <?php the_title(); ?></h3>
 				<?php
 					echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
 				?>

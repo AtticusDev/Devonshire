@@ -23,7 +23,7 @@
 					<div class="col-md-4">
 						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
 							<h3 class="underline-gold">Enquire about<br />
-								<span class="gold">Skin Cancer</span></h3>
+								<span class="gold">Cosmetic Dermatology</span></h3>
 
 							<?php
 								echo do_shortcode('[gravityform id=2 name=Enquiry title=false description=false]');
@@ -35,6 +35,22 @@
 					</div>
 				</div>
 			</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container mt-5 mb-5 text-left">
+				<div class="row">
+					<div class="col-md-6 p-5 animation-element fade-up">
+						<p><?php the_field('description1'); ?></p>
+					</div>
+					<div class="col-md-6 p-5 animation-element fade-up">
+						<p><?php the_field('description2'); ?></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
 
 
