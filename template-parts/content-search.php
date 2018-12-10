@@ -11,27 +11,19 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<?php if ( has_post_thumbnail() ) : ?>
-		<div class="post-thumbnail">
-		    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-		        <?php the_post_thumbnail('full', array('class' => 'rounded')); ?>
-		    </a>
-		</div><!--  .post-thumbnail -->
-	<?php endif; ?>
 
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-6 pt-2">
+						<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+						<div class="entry-summary">
+						<?php the_excerpt(); ?>
+						</div><!-- .entry-summary -->
+					</div>
+				</div>
+			</div>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php devonshire_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
 		<?php devonshire_entry_footer(); ?>

@@ -28,7 +28,7 @@
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-md-6 mt-3 text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBtn bgblue gold">Book an appointment</a>
+						<a href="/make-an-appointment/" class="btn largeBtn bgblue gold">Book an appointment</a>
 					</div>
 				</div>
 				<div class="row justify-content-center">

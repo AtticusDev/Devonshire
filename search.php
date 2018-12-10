@@ -9,6 +9,8 @@
 
 get_header(); ?>
 
+
+
 	<div class="container">
 		<div class="row">
 			<section id="primary" class="content-area">
@@ -16,8 +18,12 @@ get_header(); ?>
 
 				<?php
 				if ( have_posts() ) : ?>
+					<?php
+					get_template_part( 'template-parts/topnav' );
+					?>
 
-					<header class="page-header">
+
+					<header class="page-header mb-4">
 						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'devonshire' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 					</header><!-- .page-header -->
 
@@ -34,7 +40,6 @@ get_header(); ?>
 
 					endwhile;
 
-					the_posts_navigation();
 
 				else :
 
@@ -43,8 +48,7 @@ get_header(); ?>
 				endif; ?>
 
 				</main><!-- #main -->
-			</section><!-- #primary -->
+			</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

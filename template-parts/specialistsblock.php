@@ -16,7 +16,7 @@
 			        ?>
 					<div class="col-md-4 p-5">
 					<a href="<?php the_permalink(); ?>">
-						<div class="p-4 d-flex align-items-end docImage" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-repeat: no-repeat; background-size: 150%; background-position: center center; width: 100%; height: 350px;">
+						<div class="p-4 d-flex align-items-end docImage animation-element fade-up" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-repeat: no-repeat; background-size: 150%; background-position: center center; width: 100%; height: 350px;">
 							<div class="docBlockGray">
 									<div class="docName"><?php the_title(); ?></div>
 									<div class="docTitle"><?php the_field('title'); ?></div>

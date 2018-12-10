@@ -27,12 +27,14 @@
 
 					</div>
 					<div class="col-md-6">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tech-pic.jpg">
+						<div class="imageContainer">
+							<img src="<?php the_post_thumbnail_url(); ?>" class="imageAnimate">
+						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBtn gold bgblue">Book an appointment</a>
+						<a href="/make-an-appointment/" class="btn largeBtn gold bgblue">Book an appointment</a>
 					</div>
 				</div>
 			</div>
@@ -74,7 +76,7 @@
 					?>
 
 				<div class="col-md-6 p-3">
-					<div class="p-4 text-center" style="background-color: #ffffff;">
+					<div class="p-4 text-center  animation-element fade-up" style="background-color: #ffffff;">
 						<a href="<?php the_permalink(); ?>">
 							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
 							<?php
@@ -100,7 +102,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
-				<div class="generalTreatment">
+				<div class="generalTreatment  animation-element fade-up">
 					<h3 class="underline-gold">Enquire about <?php the_title(); ?></h3>
 				<?php
 					echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');

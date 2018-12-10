@@ -32,8 +32,8 @@
 								<p class="pdfDownload">Patient application form</p>
 							</div>
 						</div>
-						<div class="text-center animation-element fade-up">
-							<a href="/contact/" class="btn sideBlueGoldBtn">Book an appointment</a></p>
+						<div class="text-center">
+							<a href="/make-an-appointment/" class="btn sideBlueGoldBtn">Book an appointment</a></p>
 						</div>
 						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
 							<h3 class="underline-gold">Enquire about<br />

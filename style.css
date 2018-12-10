@@ -7173,7 +7173,7 @@ h3 {
 
 .homeCTA {
   font-size: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 20rem;
   font-family: 'Playfair Display', serif; }
 
 .home-banner {
@@ -7959,15 +7959,15 @@ div.gform_footer.top_label {
   content: "Call us on";
   color: #ffffff; }
 
-.navHolder .btnGrey {
+.site-search .btnGrey {
   background-color: #546070;
   border-radius: 0px;
   color: #ffffff; }
 
-.navHolder .btn {
+.site-search .btn {
   padding: 0.1rem 0.3rem; }
 
-.navHolder .form-control {
+.site-search .form-control {
   border-radius: 0px;
   font-size: 0.8rem;
   padding: 0.1rem 0.4rem; }
@@ -8250,6 +8250,7 @@ div.gform_footer.top_label {
   position: relative;
   padding: 16px;
   height: 50px;
+  width: 300px;
   max-width: 400px; }
 
 .site-search .input-group > .form-control {
@@ -8264,8 +8265,8 @@ div.gform_footer.top_label {
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
   background: #eee;
-  font-size: 14px;
-  border: 1px solid #eee;
+  font-size: 12px;
+  border: 0px solid #eee;
   border-radius: 0px;
   width: 100%;
   height: 100%;

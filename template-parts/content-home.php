@@ -68,7 +68,7 @@
 		<div class="container mb-4" style="margin-top: -50px;">
 			<div class="row">
 				<div class="col text-center animation-element fade-up">
-					<a href="/contact/" class="btn largeBtn gold bgblue">Book an appointment</a>
+					<a href="/make-an-appointment/" class="btn largeBtn gold bgblue">Book an appointment</a>
 				</div>
 			</div>
 		</div>

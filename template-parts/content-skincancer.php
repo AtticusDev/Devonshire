@@ -34,7 +34,7 @@
 				</div>
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/contact/" class="btn largeBtn gold bgblue">Book an appointment</a>
+						<a href="/make-an-appointment/" class="btn largeBtn gold bgblue">Book an appointment</a>
 					</div>
 				</div>
 			</div>
@@ -69,7 +69,7 @@
 					?>
 
 			<div class="col-md-6 p-3">
-				<div class="cancerTreatment">
+				<div class="cancerTreatment animation-element fade-up">
 					<div class="p-4 text-center" style="background-color: #ffffff; min-height: 250px;">
 						<a href="<?php the_permalink(); ?>">
 							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
@@ -95,7 +95,7 @@
 	<div class="container mb-5">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
-				<div class="cancerTreatment">
+				<div class="cancerTreatment animation-element fade-up">
 					<h3 class="underline-gold">Enquire about Skin Cancer</h3>
 				<?php
 					echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');

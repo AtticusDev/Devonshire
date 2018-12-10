@@ -64,14 +64,14 @@
 							<div class="col-md-8 mb-4 text-center animation-element fade-up">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/devonshire-logo-stacked-gold.svg" class="contactLogo">
 							</div>
-							<div class="col-md-8 mb-5 p-4" style="background-color: #ffffff;">
+							<div class="col-md-8 mb-5 p-4 animation-element fade-up" style="background-color: #ffffff;">
 								<?php
 								$image = get_field('map');
 								if(!empty($image)): ?>
 									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 								<?php endif; ?> 
 							</div>
-							<div class="col-md-8 mb-5">
+							<div class="col-md-8 mb-5 animation-element fade-up">
 								<p><?php the_field('directions'); ?></p>
 							</div>
 						</div>
@@ -82,7 +82,7 @@
 	<div class="container mb-5 mt-5">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
-				<div class="cancerTreatment">
+				<div class="cancerTreatment animation-element fade-up">
 					<h3 class="underline-gold">General enquiry</h3>
 				<?php
 					echo do_shortcode('[gravityform id=1 name=Enquiry title=false description=false]');
