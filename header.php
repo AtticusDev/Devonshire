@@ -28,7 +28,7 @@
 		<?php
 				        $args = array(
 			              'theme_location' => 'primary',
-			              'depth'      => 2,
+			              'depth'      => 3,
 			              'container'  => false,
 			              'menu_class'     => 'navbar-nav',
 		/*	              'walker'     => new Bootstrap_Walker_Nav_Menu()*/

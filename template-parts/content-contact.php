@@ -35,6 +35,7 @@
 					$description = get_sub_field('description');
 					$link = get_sub_field('link');
 					$image = get_sub_field('image');
+					$button = get_sub_field('button_label');
 				?>
 				<div class="col-sm-12 col-md-12 col-lg-4">
 					<div class="animation-element fade-up">
@@ -43,7 +44,7 @@
 								<div class="newsSnippet">
 									<h4 class="gold underline-gold"><?php echo $title; ?></h4>
 									<p class="mb-1"><?php echo $description; ?></p>
-									<a href="<?php echo $link; ?>" class="btn smallGoldWhiteBtn">Read More</a>
+									<a href="<?php echo $link; ?>" class="btn smallGoldWhiteBtn"><?php echo $button; ?></a>
 								</div>
 							</div>
 						</div>

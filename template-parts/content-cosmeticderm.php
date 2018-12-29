@@ -21,7 +21,7 @@
 						<h3 class="gold">Find out more</h3>
 										
 						<p><a href="/cosmetic-dermatology/what-is-cosmetic-dermatology" class="btn navGoldWhiteBtn">What is Cosmetic Dermatology</a><br />
-</p>
+						<a href="#treatments" class="btn navBlueWhiteBtn">Cosmetic Dermatology Treatments</a></p>
 
 					</div>
 					<div class="col-md-6">
@@ -38,7 +38,8 @@
 			</div>
 	</div>
 
-	<div class="container-fluid mt-0 mb-4 pt-5 pb-5" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/cosmetic-derm-bg.jpg'); background-position: center center;">
+	<div class="container-fluid mt-0 mb-4 pt-5 pb-5" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/cosmetic-derm-bg.jpg'); background-position: center center; background-size: cover;">
+		<a id="treatments"></a>
 		<div class="row justify-content-center">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -57,6 +58,7 @@
 					<?php
 					$args = array(
 					 'post_type' => 'treatment',
+					 'posts_per_page' => '20',
 					 'meta_key' => 'order_number',
 					 'orderby' => 'meta_value_num',
 					 'order' => 'ASC', 

@@ -40,7 +40,7 @@
 			</div>
 	</div>
 
-	<div class="container-fluid mt-0 mb-4 pt-5 pb-5" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/medical-derm-bg.jpg'); background-position: center center;">
+	<div class="container-fluid mt-0 mb-4 pt-5 pb-5" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/images/medical-derm-bg.jpg'); background-position: center center; background-size: cover;">
 		<a id="treatments"></a>
 		<div class="row justify-content-center">
 			<div class="container">

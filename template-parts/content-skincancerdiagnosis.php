@@ -56,18 +56,6 @@
 			?>
 
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-8 p-5 animation-element fade-up text-left">
-						<h2 class="underline-gold">Why use the Devonshire Clinic?</h2>
-						<p class="gold"><?php the_field('why_devonshire'); ?></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 
 			<?php
