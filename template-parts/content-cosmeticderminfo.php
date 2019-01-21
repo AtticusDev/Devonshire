@@ -18,6 +18,12 @@
 					<div class="col-md-8 text-left">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
+
+						<?php
+						get_template_part( 'template-parts/buttonsblock' );
+						?>
+
+
 					</div>
 
 					<div class="col-md-4">
@@ -57,7 +63,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/make-an-appointment/" class="btn largeBtn gold bgblue">Book an appointment</a>
+					<?php
+					get_template_part( 'template-parts/pageaptbutton' );
+					?>
 					</div>
 				</div>
 			</div>

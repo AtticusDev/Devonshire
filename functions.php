@@ -176,5 +176,7 @@ require get_template_directory() . '/inc/post-types/register-treatments.php';
 require get_template_directory() . '/inc/post-types/register-conditions.php';
 //Consultant custom post type
 require get_template_directory() . '/inc/post-types/register-consultants.php';
+//Staff custom post type
+require get_template_directory() . '/inc/post-types/register-staff.php';
 //Technologies custom post type
 require get_template_directory() . '/inc/post-types/register-technology.php';

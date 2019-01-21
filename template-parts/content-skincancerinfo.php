@@ -19,10 +19,9 @@
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
 
-						<h3 class="gold">Find out more</h3>
-										
-						<p><a href="#treatments" class="btn navGoldWhiteBtn">Skin Cancer Treatments</a><br />
-						<a href="/skin-cancer/diagnosing-skin-cancer/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
+						<?php
+						get_template_part( 'template-parts/buttonsblock' );
+						?>
 
 					</div>
 					<div class="col-md-4">

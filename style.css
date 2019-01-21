@@ -7065,6 +7065,9 @@ body {
   font-size: 0.8rem;
   color: #495057; }
 
+a:hover {
+  text-decoration: none; }
+
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -7082,6 +7085,10 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  letter-spacing: 0.05rem; }
+
+h4 {
+  font-size: 1.1rem;
   letter-spacing: 0.05rem; }
 
 .downloadPanel p:first-child {
@@ -7773,26 +7780,16 @@ h3 {
   display: inline-block; }
 
 .carousel .carousel-control.left span {
-  margin-right: -27px; }
+  background-color: #cca968;
+  opacity: 0.7; }
 
 .carousel .carousel-control.right span {
-  margin-left: -27px; }
+  background-color: #cca968;
+  opacity: 0.7; }
 
 .carousel .carousel-control i {
   font-size: 24px;
   margin-top: 13px; }
-
-.carousel .carousel-control.left {
-  margin-left: -28px; }
-
-.carousel .carousel-control.right {
-  margin-right: -28px; }
-
-.carousel .carousel-control.left i {
-  margin-left: -24px; }
-
-.carousel .carousel-control.right i {
-  margin-right: -24px; }
 
 .carousel-indicators {
   bottom: -42px; }
@@ -7809,6 +7806,11 @@ h3 {
 .carousel-indicators li.active {
   background: #cca968;
   border-color: #cca968; }
+
+/* VIDEO PANELS */
+.videoBox {
+  width: 640px;
+  height: 360px; }
 
 /* CANCER TREATMENT BOX */
 .cancerTreatment {
@@ -7868,16 +7870,14 @@ h3 {
 .gform_wrapper .gform_body .gform_fields .gfield .gfield_label {
   text-align: left;
   font-size: 0.8rem;
-  letter-spacing: 0.1rem;
   display: block; }
 
 .gform_wrapper .gform_footer input[type=submit] {
   padding: 1rem;
   color: white;
-  letter-spacing: 0.2rem;
   display: block;
-  text-transform: uppercase;
   white-space: normal;
+  font-family: 'Playfair Display', serif;
   padding: 0.5rem 2rem;
   border: 0;
   border-radius: 0px;
@@ -7954,7 +7954,12 @@ div.gform_footer.top_label {
     width: 100%;
     height: 550px;
     padding: 1rem;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .carousel .item {
+    min-height: 150px; }
+  .videoBox {
+    width: 420px;
+    height: 236px; } }
 
 @media screen and (max-height: 540px) {
   .sidenav {
@@ -8112,7 +8117,7 @@ div.gform_footer.top_label {
       display: none; }
     .slide-menu ul a {
       display: block;
-      padding: 12px 24px;
+      padding: 8px 20px;
       color: #cca968;
       text-decoration: none;
       border-bottom: 1px solid #cca968; }
@@ -8188,7 +8193,7 @@ div.gform_footer.top_label {
 .navbar-nav .menu-item {
   margin: 0 2rem;
   font-family: 'Playfair Display', serif;
-  font-size: 1rem; }
+  font-size: 0.9rem; }
 
 .navbar-nav .nav-link {
   position: relative;
@@ -8429,28 +8434,18 @@ div.gform_footer.top_label {
     text-decoration: none; }
 
 .socialIcons {
-  margin-top: 5rem; }
+  margin-top: 4rem; }
 
-.newsletter-form input {
-  width: 20rem;
-  padding: 10px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  background-color: #384150;
-  color: #939598;
-  border: 0px;
-  margin-top: 1rem; }
+.socialLinks {
+  margin: 1rem;
+  width: 1.5rem; }
 
-.newsletter-form button {
-  width: 10rem;
-  padding: 10px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  background-color: #546070;
-  color: #FFFFFF;
-  border: 1px solid #ffffff;
-  margin-top: 1rem;
-  margin-left: 20px; }
+/* FOOTER NEWSLETTER FORM */
+.site-footer div.gform_footer.top_label {
+  text-align: left; }
+
+.site-footer .gform_wrapper .gform_footer {
+  margin-top: 0px; }
 
 .CQCpanel {
   padding-right: 10rem; }
@@ -8475,7 +8470,10 @@ footer li a:hover {
   .footer-contact-email, .footer-contact-number, .footer-contact-email a, .footer-contact-number a {
     font-size: 1rem;
     color: #cca968;
-    font-family: 'Playfair Display', serif; } }
+    font-family: 'Playfair Display', serif; }
+  .socialIcons {
+    margin-top: 0rem;
+    margin-bottom: 2rem; } }
 
 .site-content {
   word-break: break-word; }

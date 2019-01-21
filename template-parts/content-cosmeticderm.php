@@ -18,10 +18,11 @@
 					<div class="col-md-6 pl-5 pr-5">
 						<h1><?php the_title();  ?></h1>
 						<p><?php the_content();  ?></p>
-						<h3 class="gold">Find out more</h3>
-										
-						<p><a href="/cosmetic-dermatology/what-is-cosmetic-dermatology" class="btn navGoldWhiteBtn">What is Cosmetic Dermatology</a><br />
-						<a href="#treatments" class="btn navBlueWhiteBtn">Cosmetic Dermatology Treatments</a></p>
+
+						<?php
+						get_template_part( 'template-parts/buttonsblock' );
+						?>
+
 
 					</div>
 					<div class="col-md-6">
@@ -32,7 +33,9 @@
 				</div>
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/make-an-appointment/" class="btn largeBtn gold bgblue">Book an appointment</a>
+					<?php
+					get_template_part( 'template-parts/pageaptbutton' );
+					?>
 					</div>
 				</div>
 			</div>

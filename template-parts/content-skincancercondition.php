@@ -18,23 +18,13 @@
 					<div class="col-md-8 text-left">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
-						<h3 class="gold">Find out more</h3>
-										
-						<p><a href="/skin-cancer/" class="btn navGoldWhiteBtn">Skin Cancer Treatments</a><br />
-						<a href="/skin-cancer/diagnosing-skin-cancer/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a></p>
+						<?php
+						get_template_part( 'template-parts/buttonsblock' );
+						?>
+
 
 					</div>
 					<div class="col-md-4">
-						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
-							<h3 class="underline-gold gold">Patient Downloads</h3>
-							<div class="downloadPanel text-left">
-								<p class="pdfDownload">Patient consent form</p>
-								<p class="pdfDownload">Patient application form</p>
-							</div>
-						</div>
-						<div class="text-center">
-							<a href="/make-an-appointment/" class="btn sideBlueGoldBtn">Book an appointment</a></p>
-						</div>
 						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
 							<h3 class="underline-gold">Enquire about<br />
 								<span class="gold"><?php the_title(); ?></span></h3>
@@ -42,6 +32,11 @@
 							<?php
 								echo do_shortcode('[gravityform id=2 name=Enquiry title=false description=false]');
 							?>
+						</div>
+						<div class="text-center">
+						<?php
+						get_template_part( 'template-parts/sideaptbutton' );
+						?>
 						</div>
 
 

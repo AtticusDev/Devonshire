@@ -5,7 +5,7 @@
 							<div class="col-md-8 text-center animation-element fade-up">
 								<h2 class="underline-gold gray mt-5">Our facilities</h2>
 							</div>
-							<div class="col-md-8 col-md-offset-2 m-auto animation-element fade-up">
+							<div class="col-xs-10 col-sm-10 col-md-8 col-md-offset-2 m-auto animation-element fade-up">
 
 								<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
 

@@ -68,7 +68,9 @@
 		<div class="container mb-4" style="margin-top: -50px;">
 			<div class="row">
 				<div class="col text-center animation-element fade-up">
-					<a href="/make-an-appointment/" class="btn largeBtn gold bgblue">Book an appointment</a>
+					<?php
+					get_template_part( 'template-parts/pageaptbutton' );
+					?>
 				</div>
 			</div>
 		</div>

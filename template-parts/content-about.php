@@ -21,17 +21,22 @@
 					?>
 					</div>
 				</div>
-				<div class="row justify-content-center">
+				<div class="row justify-content-center animation-element fade-up">
 					<div class="col-md-12">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/about-banner.jpg">
+						<img src="<?php the_post_thumbnail_url(); ?>">
 					</div>
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-md-6 mt-5 text-center animation-element fade-up">
-						<h3 class="gold">If you want to make an appointment with The Devonshire Clinic to
-see Dr Conal Perrett or one of our other Consultant Dermatologists,
-please click the button below or call us on 020 7034 8057.</h3>
-						<a href="/contact/" class="btn largeBtn gold bgblue">Book an appointment</a>
+						<h3 class="gold">
+							<?php
+								the_field('make_appointment');
+							?>
+								
+							</h3>
+					<?php
+					get_template_part( 'template-parts/pageaptbutton' );
+					?>
 					</div>
 				</div>
 			</div>
@@ -40,6 +45,20 @@ please click the button below or call us on 020 7034 8057.</h3>
 			<?php
 			get_template_part( 'template-parts/specialistsblock' );
 			?>
+
+			<?php
+			get_template_part( 'template-parts/staffblock' );
+			?>
+
+			<?php
+			get_template_part( 'template-parts/secondopinion' );
+			?>
+
+			<?php
+			get_template_part( 'template-parts/testimonialblock' );
+			?>
+
+
 
 
 			<div class="container-fluid" style="background-color:#f8f7f2;">
@@ -51,12 +70,12 @@ please click the button below or call us on 020 7034 8057.</h3>
 							</div>
 							<div class="col-md-6 text-center animation-element fade-up">
 								<div class="mb-5 p-4" style="background-color: #ffffff;">
-									<iframe src="https://player.vimeo.com/video/110782325?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									<iframe src="https://player.vimeo.com/video/110782325?title=0&byline=0&portrait=0" class="videoBox" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 								</div>
 							</div>
 							<div class="col-md-6 text-center animation-element fade-up">
 								<div class="mb-5 p-4" style="background-color: #ffffff;">
-									<iframe src="https://player.vimeo.com/video/110782325?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									<iframe src="https://player.vimeo.com/video/110782325?title=0&byline=0&portrait=0" class="videoBox" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>

@@ -1,29 +1,14 @@
-<?php
-/**
- * Template part for displaying page content in consultants.php
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package Devonshire
- */
-
-?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="container-fluid" style="background-color: #f8f7f2;">
-			<?php
-			get_template_part( 'template-parts/topnav' );
-			?>
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-8 text-center">
-						<h2 class="underline-gold gray mt-5 mb-2">Our <br />Specialists</h2>
+						<h2 class="underline-gold gray mt-5 mb-2">Our Staff</h2>
 					</div>
 				</div>
 				<div class="row justify-content-center">
 
 					<?php
 					$args = array(
-					 'post_type' => 'consultant',
+					 'post_type' => 'staff',
 					 'meta_key' => 'order_number',
 					 'orderby' => 'meta_value_num',
 					 'order' => 'ASC', 
@@ -51,15 +36,3 @@
 
 				</div>
 			</div>
-	</div>
-
-
-
-			<?php
-			get_template_part( 'template-parts/footerbuttons' );
-			?>
-
-</article><!-- #post-## -->
-
-
-

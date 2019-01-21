@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in cosmeticdermtreatment.php
+ * Template part for displaying page content in general.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -18,25 +18,16 @@
 					<div class="col-md-8 text-left">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
-
-						<?php
-						get_template_part( 'template-parts/buttonsblock' );
-						?>
-
+										
 					</div>
+
 					<div class="col-md-4">
 						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
-							<h3 class="underline-gold">Enquire about<br />
-								<span class="gold"><?php the_title(); ?></span></h3>
+							<h3 class="underline-gold">Enquiry form</h3>
 
 							<?php
 								echo do_shortcode('[gravityform id=2 name=Enquiry title=false description=false]');
 							?>
-						</div>
-						<div class="text-center">
-						<?php
-						get_template_part( 'template-parts/sideaptbutton' );
-						?>
 						</div>
 
 
@@ -52,13 +43,9 @@
 
 
 			<?php
-			get_template_part( 'template-parts/facilitiesblock' );
+			get_template_part( 'template-parts/newsblock' );
 			?>
 
-
-			<?php
-			get_template_part( 'template-parts/technologyblock' );
-			?>
 
 
 			<?php

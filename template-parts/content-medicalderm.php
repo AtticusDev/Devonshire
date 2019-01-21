@@ -18,12 +18,9 @@
 					<div class="col-md-6 pl-5 pr-5">
 						<h1><?php the_title();  ?></h1>
 						<p><?php the_content();  ?></p>
-						<h3 class="gold">Find out more</h3>
-										
-						<p><a href="/medical-dermatology/what-is-medical-dermatology" class="btn navGoldWhiteBtn">What is Medical Dermatology</a><br />
-						<a href="#treatments" class="btn navBlueWhiteBtn">Medical Dermatology Treatments</a><br />
-
-</p>
+						<?php
+						get_template_part( 'template-parts/buttonsblock' );
+						?>
 
 					</div>
 					<div class="col-md-6">
@@ -34,7 +31,9 @@
 				</div>
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/make-an-appointment/" class="btn largeBtn gold bgblue">Book an appointment</a>
+					<?php
+					get_template_part( 'template-parts/pageaptbutton' );
+					?>
 					</div>
 				</div>
 			</div>
@@ -59,6 +58,7 @@
 					<?php
 					$args = array(
 					 'post_type' => 'treatment',
+					 'posts_per_page' => '20',
 					 'meta_key' => 'order_number',
 					 'orderby' => 'meta_value_num',
 					 'order' => 'ASC', 

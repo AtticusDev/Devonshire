@@ -18,18 +18,16 @@
 					<div class="col-md-8 text-left">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
-						<h3 class="gold">Find out more</h3>
-										
-						<p><a href="/medical-dermatology/" class="btn navGoldWhiteBtn">Medical Dermatology Treatments</a><br />
-						<a href="#conditions" class="btn navBlueWhiteBtn">Medical Dermatology Conditions</a><br />
+						<?php
+						get_template_part( 'template-parts/buttonsblock' );
+						?>
 
-</p>
 					</div>
 
 					<div class="col-md-4">
 						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
 							<h3 class="underline-gold">Enquire about<br />
-								<span class="gold">Skin Cancer</span></h3>
+								<span class="gold">Medical Dermatology</span></h3>
 
 							<?php
 								echo do_shortcode('[gravityform id=2 name=Enquiry title=false description=false]');
@@ -79,7 +77,8 @@
 							<?php
 							$string = get_the_content();
 							?>
-							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 130, '[...]'); ?></p>
+							<p class="mb-1"><?php the_field('summary_text'); ?></p>
+<!--							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 130, '[...]'); ?></p> -->
 							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
 				</div>

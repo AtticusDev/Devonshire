@@ -6,7 +6,7 @@ $sm-menu-width: 320px !default;
 $sm-menu-bg: $blue !default;
 
 $sm-link-color: $gold !default;
-$sm-link-padding: 12px 24px !default;
+$sm-link-padding: 8px 20px !default;
 
 $sm-transition-dur: 300ms !default;
 $sm-transition-easing: ease-in-out !default;
@@ -244,7 +244,7 @@ $sm-transition-easing: ease-in-out !default;
 .navbar-nav .menu-item {
 	margin: 0 2rem;
 	font-family: 'Playfair Display', serif;
-	font-size: 1rem;
+	font-size: 0.9rem;
 }
 
 .navbar-nav .nav-link {

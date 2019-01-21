@@ -19,21 +19,28 @@
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
 
-						<h3 class="gold">Find out more</h3>
-										
-						<p><a href="#treatments" class="btn navGoldWhiteBtn"><?php the_title(); ?> Treatments</a><br />
+						<?php
+						get_template_part( 'template-parts/buttonsblock' );
+						?>
+
 
 					</div>
 					<div class="col-md-4">
 						<div class="p-4 mb-4" style="background-color: #ffffff; width:100%;">
-							<h3 class="underline-gold gold">Patient Downloads</h3>
-							<div class="downloadPanel text-left">
-								<p class="pdfDownload">Patient consent form</p>
-								<p class="pdfDownload">Patient application form</p>
-							</div>
+							<h3 class="underline-gold">Enquire about<br />
+								<span class="gold"><?php the_title(); ?></span></h3>
+
+							<?php
+								echo do_shortcode('[gravityform id=2 name=Enquiry title=false description=false]');
+							?>
 						</div>
+
+
+						
 						<div class="text-center">
-							<a href="/make-an-appointment/" class="btn sideBlueGoldBtn">Book an appointment</a></p>
+						<?php
+						get_template_part( 'template-parts/sideaptbutton' );
+						?>
 						</div>
 
 
@@ -112,10 +119,6 @@
 			get_template_part( 'template-parts/facilitiesblock' );
 			?>
 
-
-			<?php
-			get_template_part( 'template-parts/specialistsblock' );
-			?>
 
 
 			<?php

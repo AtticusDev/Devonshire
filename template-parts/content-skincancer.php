@@ -18,11 +18,11 @@
 					<div class="col-md-6 pl-5 pr-5">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
-						<h3 class="gold">Find out more</h3>
-										
-						<p><a href="/skin-cancer/what-is-skin-cancer/" class="btn navGoldWhiteBtn">What is Skin Cancer</a><br />
-						<a href="/skin-cancer/diagnosing-skin-cancer/" class="btn navBlueWhiteBtn">Diagnosing Skin Cancer</a><br />
-						<a href="#treatments" class="btn navGoldWhiteBtn">Skin Cancer Treatments</a></p>
+
+						<?php
+						get_template_part( 'template-parts/buttonsblock' );
+						?>
+
 
 
 					</div>
@@ -34,7 +34,9 @@
 				</div>
 				<div class="row">
 					<div class="col text-center animation-element fade-up">
-						<a href="/make-an-appointment/" class="btn largeBtn gold bgblue">Book an appointment</a>
+					<?php
+					get_template_part( 'template-parts/pageaptbutton' );
+					?>
 					</div>
 				</div>
 			</div>

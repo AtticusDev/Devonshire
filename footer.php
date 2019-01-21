@@ -24,21 +24,18 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-6 footer-title-white-norule">
+				<div class="col-sm-12 col-md-6">
+					<div class="footer-title-white-norule">
 					Subscribe to our Newsletter
-					<div>
-					  <form role="search" method="get" class="form newsletter-form" action="/index.php">
-						<div class="input-group">
-					      <input name="s" type="text" placeholder="Email address">
-					      <span class="input-group-btn">
-					        <button type="submit" value="Search" type="button">Subscribe</button>
-					    	</span>
-						</div>
-						</form>
 					</div>
-
+					<div>
+						<?php
+							echo do_shortcode('[gravityform id=4 name=Newsletter title=false description=false]');
+						?>
+					</div>
 				</div>
-				<div class="col-sm-12 col-md-2 d-flex justify-content-between socialIcons">
+
+				<div class="col-sm-12 col-md-2 d-flex justify-content-center socialIcons">
 						<?php
 					// check if the repeater field has rows of data
 					if( have_rows('social_media', 'option') ):
@@ -46,8 +43,8 @@
 					 	// loop through the rows of data
 					    while ( have_rows('social_media', 'option') ) : the_row();
 				    	?>
-				    	<div style="width: 1.1rem;">
-				    	<a href="<?php the_sub_field('sm_link'); ?>">
+				    	<div class="socialLinks">
+				    	<a href="<?php the_sub_field('sm_link'); ?>" target="_blank">
 	    				<?php
 						// display a sub field value
 				        the_sub_field('sm_icon');
