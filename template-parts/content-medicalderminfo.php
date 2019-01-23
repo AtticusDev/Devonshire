@@ -53,6 +53,7 @@
 					<?php
 					$args = array(
 					 'post_type' => 'condition',
+					 'posts_per_page' => '20',
 					 'meta_key' => 'order_number',
 					 'orderby' => 'meta_value_num',
 					 'order' => 'ASC', 
@@ -75,10 +76,9 @@
 						<a href="<?php the_permalink(); ?>">
 							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
 							<?php
-							$string = get_the_content();
+							$string = get_field('summary_text');
 							?>
-							<p class="mb-1"><?php the_field('summary_text'); ?></p>
-<!--							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 130, '[...]'); ?></p> -->
+							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 130, '[...]'); ?></p>
 							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 					</div>
 				</div>

@@ -20,8 +20,8 @@
 					the_title();
 					?>
 					</h1>
-					<?php
-							echo do_shortcode('[gravityform id=3 name=Enquiry title=false description=false]');
+					<?php 
+					the_content();
 					?>
 
 					</div>

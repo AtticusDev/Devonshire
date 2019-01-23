@@ -59,39 +59,54 @@
 
 
 
-	<div class="container-fluid mt-0 mb-4 pt-5 pb-5"  style="background-color: #f8f7f2;">
+	<div class="container mt-5 mb-5">
 		<a id="treatments"></a>
 		<div class="row justify-content-center">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-6 text-center animation-element fade-up">
-						<h2 class="underline-gold gray">Available Skin Cancer Treatments</h2>
-					</div>
-				</div>
-				<div class="row">
+			<div class="col-md-6 text-center animation-element fade-up">
+				<h2 class="underline-gold gray">Skin Cancer Treatments</h2>
+			</div>
+		</div>
+		<div class="row justify-content-center">
 
-				<?php 
-				$posts = get_field('select_treatment');
-				if( $posts ): ?>
-				    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-			        <?php setup_postdata($post);
-			        ?>
-					<div class="col-md-6 p-3">
-						<div class="cancerTreatment animation-element fade-up">
-							<div class="p-4 text-center" style="background-color: #ffffff;">
-								<a href="<?php the_permalink(); ?>">
-									<h3 class="underline-blue"><?php the_title(); ?></h3></a>
-									<p class="mb-1"><?php the_excerpt(); ?></p>
-									<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
-							</div>
-						</div>
-					</div>
-				    <?php endforeach; ?>
-				    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-				<?php endif; ?>						
+					<?php
+					$args = array(
+					 'post_type' => 'treatment',
+					 'meta_key' => 'order_number',
+					 'orderby' => 'meta_value_num',
+					 'order' => 'ASC', 
+					'tax_query' => array(
+							array(
+								'taxonomy' => 'category',
+								'field'    => 'slug',
+								'terms' => 'skin-cancer'
+							),
+						),
+					 );
 
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+					?>
+
+			<div class="col-md-6 p-3">
+				<div class="cancerTreatment animation-element fade-up">
+					<div class="p-4 text-center" style="background-color: #ffffff; min-height: 250px;">
+						<a href="<?php the_permalink(); ?>">
+							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
+							<?php
+							$string = get_field('summary_text');
+							?>
+							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 120, '[...]'); ?></p>
+							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
+					</div>
 				</div>
 			</div>
+
+				<?php
+					endwhile;
+
+					wp_reset_query();
+
+					?>
 		</div>
 	</div>
 	<div class="container-fluid">

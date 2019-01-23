@@ -88,7 +88,10 @@
 							<div class="p-4 text-center animation-element fade-up" style="background-color: #ffffff;">
 								<a href="<?php the_permalink(); ?>">
 									<h3 class="underline-blue"><?php the_title(); ?></h3></a>
-									<p class="mb-1"><?php the_excerpt(); ?></p>
+							<?php
+							$string = get_field('summary_text');
+							?>
+							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 120, '[...]'); ?></p>
 									<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
 							</div>
 					</div>

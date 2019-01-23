@@ -76,7 +76,7 @@
 						<a href="<?php the_permalink(); ?>">
 							<h3 class="underline-blue"><?php the_title(); ?></h3></a>
 							<?php
-							$string = get_the_content();
+							$string = get_field('summary_text');
 							?>
 							<p class="mb-1"><?php echo mb_strimwidth($string, 0, 120, '[...]'); ?></p>
 							<a href="<?php the_permalink(); ?>" class="btn smallBlueWhiteBtn">Read More</a>
