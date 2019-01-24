@@ -21,7 +21,7 @@
 
 					</div>
 					<div class="col-md-6">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/tech-pic.jpg" class="mt-5">
+						<img src="<?php the_post_thumbnail_url(); ?>" class="mt-5">
 					</div>
 				</div>
 				<div class="row">

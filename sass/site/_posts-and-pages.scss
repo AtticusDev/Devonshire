@@ -100,6 +100,7 @@ h1{
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
   color: $gray-600;
+  margin-top:0rem;
 }
 h2{
   font-size: 2.5rem;
@@ -184,16 +185,7 @@ h4{
     text-align: center;
     overflow: hidden;
     position: relative;
-    width: 570px;
-    height: 436px;
-}
-.imageContainer img{
-  max-width: 200%;
-  max-height: 200%
-}
-.imageAnimate{
-    width:570px;
-    height:436px;  
+    width: 100%;
 }
 
 /* HOME PAGE STYLES */
@@ -375,6 +367,11 @@ h4{
   padding-bottom: 0px;
 }
 
+.introPanel{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 /* BUTTONS */
 
 .gold, .gold:hover {
@@ -501,7 +498,7 @@ h4{
   background-color: $gold;
   color: $white;
   white-space: normal;
-  width:25rem;
+  width: 70%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 4rem;
@@ -546,7 +543,7 @@ h4{
   background-color: $blue;
   color: $white;
   white-space: normal;
-  width:25rem;
+  width:70%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 4rem;
@@ -1010,6 +1007,7 @@ div.gform_footer.top_label {
   }
     h1{
       font-size: 1.3rem;
+      margin-top: 5rem;
     }
     h2{
       font-size: 1.1rem;
@@ -1062,7 +1060,7 @@ div.gform_footer.top_label {
 
 
   .intro-strap{
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: 'Playfair Display', serif;
     color: $white;
   }
@@ -1109,6 +1107,18 @@ div.gform_footer.top_label {
     width:420px;
     height: 236px;
   }
+
+  .navGoldWhiteBtn, .navBlueWhiteBtn {
+    width: 100%;
+  }
+
+  .introPanel{
+    padding:0px;
+  }
+  .intro-strap{
+    font-size: 1.2rem;
+  }
+
 
 }
 

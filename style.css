@@ -7076,7 +7076,8 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
-  color: #868e96; }
+  color: #868e96;
+  margin-top: 0rem; }
 
 h2 {
   font-size: 2.5rem;
@@ -7156,16 +7157,7 @@ h4 {
   text-align: center;
   overflow: hidden;
   position: relative;
-  width: 570px;
-  height: 436px; }
-
-.imageContainer img {
-  max-width: 200%;
-  max-height: 200%; }
-
-.imageAnimate {
-  width: 570px;
-  height: 436px; }
+  width: 100%; }
 
 /* HOME PAGE STYLES */
 .intro-strap {
@@ -7329,6 +7321,10 @@ h4 {
   margin-bottom: 0px;
   padding-bottom: 0px; }
 
+.introPanel {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
 /* BUTTONS */
 .gold, .gold:hover {
   color: #cca968; }
@@ -7447,7 +7443,7 @@ h4 {
   background-color: #cca968;
   color: #fff;
   white-space: normal;
-  width: 25rem;
+  width: 70%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 4rem;
@@ -7492,7 +7488,7 @@ h4 {
   background-color: #546070;
   color: #fff;
   white-space: normal;
-  width: 25rem;
+  width: 70%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 4rem;
@@ -7900,7 +7896,8 @@ div.gform_footer.top_label {
     clear: both;
     width: 100%; }
   h1 {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    margin-top: 5rem; }
   h2 {
     font-size: 1.1rem; }
   h3 {
@@ -7926,7 +7923,7 @@ div.gform_footer.top_label {
     -webkit-transform: none !important;
     transform: none !important; }
   .intro-strap {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: 'Playfair Display', serif;
     color: #fff; }
   .homeIntro {
@@ -7959,7 +7956,13 @@ div.gform_footer.top_label {
     min-height: 150px; }
   .videoBox {
     width: 420px;
-    height: 236px; } }
+    height: 236px; }
+  .navGoldWhiteBtn, .navBlueWhiteBtn {
+    width: 100%; }
+  .introPanel {
+    padding: 0px; }
+  .intro-strap {
+    font-size: 1.2rem; } }
 
 @media screen and (max-height: 540px) {
   .sidenav {

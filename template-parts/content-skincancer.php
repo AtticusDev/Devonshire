@@ -13,9 +13,9 @@
 			<?php
 			get_template_part( 'template-parts/topnav' );
 			?>
-			<div class="container mt-5">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-6 pl-5 pr-5">
+					<div class="col-md-6 introPanel">
 						<h1><?php the_title(); ?></h1>
 						<p><?php the_content(); ?></p>
 
@@ -28,7 +28,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="imageContainer">
-							<img src="<?php the_post_thumbnail_url(); ?>" class="imageAnimate">
+							<img src="<?php the_post_thumbnail_url(); ?>">
 						</div>
 					</div>
 				</div>
