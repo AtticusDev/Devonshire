@@ -160,6 +160,7 @@ $sm-transition-easing: ease-in-out !default;
 			color: $sm-link-color;
 			text-decoration: none;
 			border-bottom: 1px solid $gold;
+			font-weight: 400;
 		}
 		a:hover{
 			color: $white;
@@ -187,6 +188,7 @@ $sm-transition-easing: ease-in-out !default;
 	text-align: center;
 	color: #404044;
 	transition: color 0.5s;
+	font-weight: 400;
 }
 
 #menu-top-menu-home .nav-link:hover{
@@ -253,6 +255,7 @@ $sm-transition-easing: ease-in-out !default;
 	text-align: center;
 	color: #404044;
 	transition: color 0.5s;
+	font-weight: 400;
 }
 
 .navbar-nav .nav-link:hover{

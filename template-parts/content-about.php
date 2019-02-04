@@ -60,7 +60,8 @@
 
 
 
-
+<!-- HIDDEN UNTIL VIDEO CAN BE ADDED -->
+<!--
 			<div class="container-fluid" style="background-color:#f8f7f2;">
 				<div class="row">
 					<div class="container">
@@ -82,7 +83,7 @@
 					</div>
 				</div>
 			</div>
-
+-->
 
 			<?php
 			get_template_part( 'template-parts/facilitiesblock' );

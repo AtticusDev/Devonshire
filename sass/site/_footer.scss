@@ -8,15 +8,17 @@
 	font-size: 1.4rem;
 	color: $gold;
 	font-family: 'Playfair Display', serif;
+	font-weight: 400;
 }
 .footer-logo {
 	width: 250px;
 }
-.footer-title-white, .footer-title-white-norule {
+.footer-title-white, .footer-title-white-norule, .footer-title-white a {
 	font-size: 1.2rem;
 	color: white;
 	font-family: 'Playfair Display', serif;
 	padding-top: 1.5rem;
+	font-weight: 400;
 }
 .footer-title-white:after {
      background: none repeat scroll 0 0 $gold;

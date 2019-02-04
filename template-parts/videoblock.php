@@ -1,4 +1,6 @@
-			<div class="container-fluid" style="background-color:#f8f7f2;">
+<!-- HIDDEN UNTIL VIDEO CAN BE INCLUDED -->
+
+<!--			<div class="container-fluid" style="background-color:#f8f7f2;">
 				<div class="row">
 					<div class="container">
 						<div class="row justify-content-center">
@@ -14,3 +16,4 @@
 					</div>
 				</div>
 			</div>
+-->

@@ -7065,13 +7065,21 @@ body {
   font-size: 0.8rem;
   color: #495057; }
 
+a {
+  color: #000000;
+  font-weight: 600; }
+
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000000; }
 
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: normal; }
+
+h1 a, h2 a, h3 a, h4 a {
+  font-weight: 400; }
 
 h1 {
   font-size: 2.5rem;
@@ -7193,7 +7201,8 @@ h4 {
   background-color: #f7f2e8;
   width: 100%;
   height: 80px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 400; }
 
 .techBlockWhite {
   font-size: 1.3rem;
@@ -7202,7 +7211,8 @@ h4 {
   background-color: #ffffff;
   width: 100%;
   height: 80px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 400; }
 
 /* DOCTOR BLOCKS */
 .docBlockGray {
@@ -7443,11 +7453,11 @@ h4 {
   background-color: #cca968;
   color: #fff;
   white-space: normal;
-  width: 70%;
+  width: 80%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   border: 0;
   border-radius: 0;
   font-size: 1.2rem;
@@ -7470,29 +7480,29 @@ h4 {
   position: absolute;
   opacity: 0;
   top: 8px;
-  right: 4rem;
+  right: 3rem;
   -webkit-transition: 0.3s;
           transition: 0.3s; }
 
 .navGoldWhiteBtn:hover {
   background-color: #cca968;
   color: #fff;
-  padding-left: 2rem;
-  padding-right: 6rem; }
+  padding-left: 1.5rem;
+  padding-right: 4.5rem; }
 
 .navGoldWhiteBtn:hover:after {
   opacity: 1;
-  right: 2rem; }
+  right: 1.5rem; }
 
 .navBlueWhiteBtn {
   background-color: #546070;
   color: #fff;
   white-space: normal;
-  width: 70%;
+  width: 80%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   border: 0;
   border-radius: 0;
   font-size: 1.2rem;
@@ -7515,19 +7525,19 @@ h4 {
   position: absolute;
   opacity: 0;
   top: 8px;
-  right: 4rem;
+  right: 3rem;
   -webkit-transition: 0.3s;
           transition: 0.3s; }
 
 .navBlueWhiteBtn:hover {
   background-color: #546070;
   color: #fff;
-  padding-left: 2rem;
-  padding-right: 6rem; }
+  padding-left: 1.5rem;
+  padding-right: 4.5rem; }
 
 .navBlueWhiteBtn:hover:after {
   opacity: 1;
-  right: 2rem; }
+  right: 1.5rem; }
 
 .sideBlueGoldBtn {
   background-color: #546070;
@@ -8123,7 +8133,8 @@ div.gform_footer.top_label {
       padding: 8px 20px;
       color: #cca968;
       text-decoration: none;
-      border-bottom: 1px solid #cca968; }
+      border-bottom: 1px solid #cca968;
+      font-weight: 400; }
     .slide-menu ul a:hover {
       color: #fff; }
   .slide-menu.no-transition, .slide-menu.no-transition * {
@@ -8140,7 +8151,8 @@ div.gform_footer.top_label {
   text-align: center;
   color: #404044;
   -webkit-transition: color 0.5s;
-          transition: color 0.5s; }
+          transition: color 0.5s;
+  font-weight: 400; }
 
 #menu-top-menu-home .nav-link:hover {
   color: #FFFFFF; }
@@ -8204,7 +8216,8 @@ div.gform_footer.top_label {
   text-align: center;
   color: #404044;
   -webkit-transition: color 0.5s;
-          transition: color 0.5s; }
+          transition: color 0.5s;
+  font-weight: 400; }
 
 .navbar-nav .nav-link:hover {
   color: #cca969; }
@@ -8406,16 +8419,18 @@ div.gform_footer.top_label {
 .footer-contact-email, .footer-contact-number, .footer-contact-email a, .footer-contact-number a {
   font-size: 1.4rem;
   color: #cca968;
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  font-weight: 400; }
 
 .footer-logo {
   width: 250px; }
 
-.footer-title-white, .footer-title-white-norule {
+.footer-title-white, .footer-title-white-norule, .footer-title-white a {
   font-size: 1.2rem;
   color: white;
   font-family: 'Playfair Display', serif;
-  padding-top: 1.5rem; }
+  padding-top: 1.5rem;
+  font-weight: 400; }
 
 .footer-title-white:after {
   background: none repeat scroll 0 0 #cca968;
