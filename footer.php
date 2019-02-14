@@ -20,7 +20,7 @@
 					<a href="mailto:info@thedevonshireclinic.co.uk">info@thedevonshireclinic.co.uk</a>
 				</div>
 				<div class="col-md-4 footer-contact-number">
-					+44 (0) 20 3918 9601
+					  <span class="rTapNumber321152">020 7034 8057</span>
 				</div>
 			</div>
 			<div class="row">
@@ -109,6 +109,17 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script type="text/javascript">
+   var adiInit = "54702", adiRVO = true;
+   var adiFunc = null;
+   (function() {
+      var adiSrc = document.createElement("script"); adiSrc.type = "text/javascript";
+      adiSrc.async = true;
+      adiSrc.src = ("https:" == document.location.protocol ? "https://static-ssl" : "http://static-cdn")
+      	+ ".responsetap.com/static/scripts/rTapTrack.min.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(adiSrc, s);
+   })();
+</script>
 </body>
 </html>

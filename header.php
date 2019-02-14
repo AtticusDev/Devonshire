@@ -47,7 +47,7 @@
 							<div class="container">
 								<div class="row justify-content-between text-white">
 									<div class="contactNo">
-										+44 (0)20 7034 8057
+										  <span class="rTapNumber321152">020 7034 8057</span>
 									</div>
 									<div class="siteName">
 										<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="mainLogo"></div></a>

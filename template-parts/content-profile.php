@@ -10,6 +10,9 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="container-fluid" style="background-color: #f8f7f2;">
+
+<?php the_field('schema'); ?>
+
 			<?php
 			get_template_part( 'template-parts/topnav' );
 			?>
@@ -56,7 +59,7 @@
 	</div>
 
 
-			<div class="container-fluid" style="background-color:#f8f7f2;">
+<!--			<div class="container-fluid" style="background-color:#f8f7f2;">
 				<div class="row">
 					<div class="container">
 						<div class="row justify-content-center">
@@ -77,7 +80,7 @@
 					</div>
 				</div>
 			</div>
-
+-->
 
 			<?php
 			get_template_part( 'template-parts/testimonialblock' );
