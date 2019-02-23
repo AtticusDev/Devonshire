@@ -102,5 +102,8 @@
 
 </article><!-- #post-## -->
 
+	<?php
+		the_field('schema');
+	?>
 
 

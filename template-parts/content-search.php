@@ -29,3 +29,6 @@
 		<?php devonshire_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+
+<!-- JSON-LD markup generated for Local Business -->
+

@@ -45,4 +45,42 @@
 </article><!-- #post-## -->
 
 
+<!-- JSON-LD markup generated for Local Business -->
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MedicalClinic",
+  "name": "The Devonshire Clinic",
+  "image": "http://thedevonshireclinic.co.uk/wp-content/themes/devonshire-clinic/assets/the-devonshire-clinic-logo-new2.svg",
+  "@id": "http://thedevonshireclinic.co.uk/#localbusiness",
+  "url": "http://thedevonshireclinic.co.uk/",
+  "telephone": "+44 (0) 20 3918 7970",
+  "priceRange": "£££",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16 Devonshire Street",
+    "addressLocality": "London",
+    "postalCode": "W1G7AF",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.5220411,
+    "longitude": -0.14709340000001703
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "08:30",
+    "closes": "19:00"
+  },
+  "sameAs": "https://www.facebook.com/TheDevonshireClinic/"
+}
+</script>

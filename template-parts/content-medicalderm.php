@@ -143,5 +143,8 @@
 
 </article><!-- #post-## -->
 
+<!-- JSON-LD markup generated for Local Business -->
 
-
+	<?php
+		the_field('schema');
+	?>

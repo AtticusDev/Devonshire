@@ -1,7 +1,22 @@
+<?php
+/**
+ * Template part for displaying page content in staff.php
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Devonshire
+ */
+
+?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="container-fluid" style="background-color: #f8f7f2;">
+			<?php
+			get_template_part( 'template-parts/topnav' );
+			?>
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-8 text-center">
-						<h2 class="underline-gold gray mt-5 mb-2">Our Team</h2>
+						<h2 class="underline-gold gray mt-5 mb-2">Our <br />Team</h2>
 					</div>
 				</div>
 				<div class="row justify-content-center">
@@ -36,3 +51,19 @@
 
 				</div>
 			</div>
+	</div>
+
+
+
+			<?php
+			get_template_part( 'template-parts/footerbuttons' );
+			?>
+
+</article><!-- #post-## -->
+
+
+<!-- JSON-LD markup generated for Local Business -->
+
+	<?php
+		the_field('schema');
+	?>
