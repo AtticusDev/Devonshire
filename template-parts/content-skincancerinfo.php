@@ -57,6 +57,9 @@
 		</div>
 	</div>
 
+			<?php
+			get_template_part( 'template-parts/videoblock' );
+			?>
 
 
 	<div class="container mt-5 mb-5">

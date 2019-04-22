@@ -47,6 +47,9 @@
 	</div>
 
 			<?php
+			get_template_part( 'template-parts/videoblock' );
+			?>
+			<?php
 			get_template_part( 'template-parts/testimonialblock' );
 			?>
 			<?php

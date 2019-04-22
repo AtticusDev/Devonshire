@@ -12,6 +12,14 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+
+<?php
+if ( is_front_page() ) :
+?>
+<meta name="google-site-verification" content="bogUf41LRdYp_sQaQZuNYmIOUN3rq4jLEUT7_bHfq-I" />
+<?php
+endif;
+?>
 	<!-- Google Tag Manager -->
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

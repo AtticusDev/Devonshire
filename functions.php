@@ -180,6 +180,8 @@ require get_template_directory() . '/inc/post-types/register-consultants.php';
 require get_template_directory() . '/inc/post-types/register-staff.php';
 //Technologies custom post type
 require get_template_directory() . '/inc/post-types/register-technology.php';
+//Videos custom post type
+require get_template_directory() . '/inc/post-types/register-videos.php';
 
 
 function bybe_remove_yoast_json($data){

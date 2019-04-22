@@ -15,7 +15,7 @@
 			?>
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-md-8 p-5">
+					<div class="col-md-8 p-5 links-underline">
 					<?php
 					the_content();
 					?>
@@ -43,6 +43,10 @@
 	</div>
 
 			<?php
+			get_template_part( 'template-parts/videoblock' );
+			?>
+
+			<?php
 			get_template_part( 'template-parts/specialistsblock' );
 			?>
 
@@ -60,30 +64,7 @@
 
 
 
-<!-- HIDDEN UNTIL VIDEO CAN BE ADDED -->
-<!--
-			<div class="container-fluid" style="background-color:#f8f7f2;">
-				<div class="row">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-md-12">
-								<h2 class="underline-gold gray mt-5">Videos</h2>
-							</div>
-							<div class="col-md-6 text-center animation-element fade-up">
-								<div class="mb-5 p-4" style="background-color: #ffffff;">
-									<iframe src="https://player.vimeo.com/video/110782325?title=0&byline=0&portrait=0" class="videoBox" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-								</div>
-							</div>
-							<div class="col-md-6 text-center animation-element fade-up">
-								<div class="mb-5 p-4" style="background-color: #ffffff;">
-									<iframe src="https://player.vimeo.com/video/110782325?title=0&byline=0&portrait=0" class="videoBox" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
--->
+
 
 			<?php
 			get_template_part( 'template-parts/facilitiesblock' );
